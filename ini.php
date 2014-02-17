@@ -6,38 +6,38 @@
 	/* KAMELOS MARKETING INC	40/79/103/137     	*/
 
 /// SITE INI	
-	define('SITE_THEME_DEFAULT'				, "default");		
+	define('SITE_THEME_DEFAULT'			, "default");		
 	define('SITE_PATH'						, "");
 	
-	define('SITE_CONTENTS_PATH'				, SITE_PATH . "contents/");	
-	define('SITE_FILES_PATH'				, SITE_PATH . "files/");
+	define('SITE_CONTENTS_PATH'			, SITE_PATH . "contents/");	
+	define('SITE_FILES_PATH'			, SITE_PATH . "files/");
 	define('SITE_LANGUAGES_PATH'			, SITE_PATH . "languages/");
-	define('SITE_MODULES_PATH'				, SITE_PATH . "modules/");
-	define('SITE_THEMES_PATH'				, SITE_PATH . "themes/");
+	define('SITE_MODULES_PATH'			, SITE_PATH . "modules/");
+	define('SITE_THEMES_PATH'			, SITE_PATH . "themes/");
 		
-	define('SITE_CSS_PATH'					, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/css/");
-	define('SITE_FONTS_PATH'				, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/fonts/");	
-	define('SITE_IMAGES_PATH'				, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/images/");	
-	define('SITE_SWF_PATH'					, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/swf/");
+	define('SITE_CSS_PATH'				, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/css/");
+	define('SITE_FONTS_PATH'			, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/fonts/");	
+	define('SITE_IMAGES_PATH'			, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/images/");	
+	define('SITE_SWF_PATH'				, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/swf/");
 	define('SITE_TEMPLATES_PATH'			, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/templates/");
 	define('SITE_CONTENTS_HTML_PATH'		, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/contents_html/");
 	define('SITE_TEMPLATES_HTML_PATH'		, SITE_THEMES_PATH . SITE_THEME_DEFAULT . "/templates/");	
 
-	define('PAGE_DEFAULT'					, "profil");
+	define('PAGE_DEFAULT'				, "profil");
 	define('PAGE_ERROR_NOTFOUND'			, "error");
-	define('PAGE_ERROR_ACCESS'				, "error");
-	define('PAGE_AFTER_LOGIN'				, "home");
+	define('PAGE_ERROR_ACCESS'			, "error");
+	define('PAGE_AFTER_LOGIN'			, "home");
 	
 	define('SITE_DEFAULT_LAYOUT'			, "full");
 	define('PAGE_DEFAULT_LAYOUT'			, 3834); //bleu:3828 
 	
-	define('HTML_WIDTH'						, 500);
-	define('HTML_HEIGHT'					, 400);	
+	define('HTML_WIDTH'				, 500);
+	define('HTML_HEIGHT'				, 400);	
 	define('SITE_FILES_BATCH_PATH'			, SITE_FILES_PATH . "_batch/");
 	
 /// LANGUAGES
-	define('LANG_DEFAULT'					, FR);
-	define('LANG_SWITCH'					, true); //v3.26
+	define('LANG_DEFAULT'				, FR);
+	define('LANG_SWITCH'				, true); //v3.26
 	
 
 /// DOMAINS SETTINGS (lang, default page, etc)
@@ -111,7 +111,7 @@
 											 'title_en' 	=> 'light blue',
 											 'file' 		=> 'light_blue.jpg',),
 									 array(	'id' 		=> 2,
-											 'title_fr' 	=> 'orange brûlé',
+											 'title_fr' 	=> 'orange brï¿½lï¿½',
 											 'title_en' 	=> 'burnt orange',
 											 'file' 		=> 'burnt_orange.jpg',),
 									 array(	'id' 		=> 3,
