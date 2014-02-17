@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN ACCOUT_SMALL_LOGIN -->
+						<div class="ACCOUNT_SMALL_BOX">
+							<form name="loginform" method="post" action="?p=session&m=login">
+								{LOGIN_USERNAME}
+								<br />
+								<input name="username" type="text" value="" size="15">
+								<br />
+								{LOGIN_PASSWORD}
+								<br />
+								<input name="password" type="password" size="15">
+								<br />
+								<br />
+								<input type="submit" name="b_login" value="{B_LOGIN_LABEL}">
+							</form>	
+							
+							{ACCOUNT_SMALL_CREATE}
+							{ACCOUNT_SMALL_UPDATE}
+							{ACCOUNT_SMALL_LOGOUT}
+						</div>
+					<!-- END ACCOUT_SMALL_LOGIN -->
+					
+					<!-- BEGIN ACCOUNT_SMALL_CREATE -->
+						<div class="ACCOUNT_SMALL_CREATE">
+							{CREATE_LABEL}
+						</div>
+					<!-- END ACCOUNT_SMALL_CREATE -->					
+					
+					
+				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

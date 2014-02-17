@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="/themes/default/css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN FORM -->
+					<form action="" method="post" enctype="multipart/form-data" name="files" id="files">
+						<!-- BEGIN INPUT -->
+						<div class="FIELD_BOX">
+							<div class="FIELD_LABEL">
+								{FIELD_LABEL} :
+							</div>
+							<div class="FIELD_VALUE">
+								<input name="{NAME}" id="{NAME}" type="{TYPE}" value="{FIELD_VALUE}" size="{SIZE}" maxlength="{MAX}" {DISABLE} />
+							</div>
+						</div>
+						<!-- END INPUT -->
+
+						<!-- BEGIN TEXTAREA -->
+						<div class="FIELD_BOX">
+							<div class="FIELD_LABEL">
+								{FIELD_LABEL} :
+							</div>
+							<div class="FIELD_VALUE">
+								<textarea name="{NAME}" id="{NAME}" cols="{WIDTH}" rows="{HEIGHT}">{FIELD_VALUE}</textarea>
+							</div>
+						</div>
+						<!-- END TEXTAREA -->
+
+						<!-- BEGIN SELECTOR -->
+						<div class="FIELD_BOX">
+							<div class="FIELD_LABEL">
+								{FIELD_LABEL} :
+							</div>
+							<div class="FIELD_VALUE">
+								{FIELD_VALUE}
+							</div>
+						</div>
+						<!-- END SELECTOR -->
+
+						<!-- BEGIN SELECTOR_IMAGES -->
+						<div class="FIELD_BOX">
+							<div class="FIELD_LABEL">
+								{FIELD_LABEL} :
+							</div>
+							<div class="FIELD_VALUE">
+								{FIELD_VALUE}
+							</div>
+							<div class="FIELD_VALUE_IMAGE">
+								{IMAGE_PREVIEW}
+							</div>
+							
+						</div>
+						<!-- END SELECTOR_IMAGES -->
+						
+						<!-- BEGIN HTML -->
+						<div class="FIELD_BOX_LARGE">
+							<div class="FIELD_LABEL_LARGE">
+								{FIELD_LABEL} :
+							</div>
+							<div class="FIELD_VALUE_LARGE">
+								{FIELD_VALUE}
+							</div>
+						</div>							
+						<!-- END HTML -->
+						
+						<!-- BEGIN CALENDAR -->
+						<div class="FIELD_BOX">
+							<div class="FIELD_LABEL">
+								{FIELD_LABEL} :
+							</div>
+							<div class="FIELD_VALUE">
+								<div name="{FIELD_DATE_ID}" id="{FIELD_DATE_ID}" class="FIELD_DATE_OUTPUT">{FIELD_DATE_OUTPUT}</div>
+								{FIELD_VALUE}
+							</div>
+						</div>
+						<!-- END CALENDAR -->
+						
+						<!-- BEGIN CALENDAR_SHORT -->
+							<span name="{FIELD_DATE_ID}" id="{FIELD_DATE_ID}">{FIELD_DATE_OUTPUT}</span>
+							{FIELD_VALUE}
+						<!-- END CALENDAR_SHORT -->							
+												
+						<!-- BEGIN ITEMS_ZOOM_NAV -->
+						<br />
+						<div class="ITEMS_NAV">
+							<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+							<br />
+							<font size="-2">{NAV_RETURN}</font>					</div>
+						<br />
+						<!-- END ITEMS_ZOOM_NAV -->						
+													
+					</form>
+					<!-- END FORM -->
+					
+					<!-- BEGIN SYSTEM_EDIT -->
+						<div class="SYSTEM_EDIT_BOX">
+                            {FORM_BEGIN}
+							{FORM_CONTENT}
+                            {FORM_END}
+						</div>							
+					<!-- END SYSTEM_EDIT -->	
+					
+				
+				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

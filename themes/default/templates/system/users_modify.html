@@ -1,0 +1,79 @@
+<form id="form1" name="form1" method="post" action="?p=users_admin&process=modify_save">
+    <table width="612" height="282" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td height="39" colspan="2"><div align="center">
+                <p><strong><font size="+2">Modifier son compte </font></strong></p>
+                <p><font color="#FF0000">{MESSAGE}</font><br>
+                        <font color="#00CC00">{MESSAGE_SUCESS}</font></p>
+            </div></td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><div align="right">Pr&eacute;nom:</div></td>
+            <td><input name="UR_PRENOM" type="text" id="UR_PRENOM" value="{UR_PRENOM}" /></td>
+        </tr>
+        <tr>
+            <td width="248"><div align="right">Nom:</div></td>
+            <td width="364"><label>
+                <input name="UR_NOM" type="text" id="UR_NOM" value="{UR_NOM}" />
+            </label></td>
+        </tr>
+        <tr>
+            <td><div align="right"></div></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><div align="right">Courriel:</div></td>
+            <td><input name="UR_EMAIL" type="text" id="UR_EMAIL" value="{UR_EMAIL}" /></td>
+        </tr>
+        <tr>
+            <td><div align="right">Adresse:</div></td>
+            <td><div align="left">
+                <input name="UR_ADRESSE" type="text" id="UR_ADRESSE" value="{UR_ADRESSE}" />
+            </div></td>
+        </tr>
+        <tr>
+            <td><div align="right">Ville:</div></td>
+            <td><div align="left">
+                <input name="UR_VILLE" type="text" id="UR_VILLE" value="{UR_VILLE}" />
+            </div></td>
+        </tr>
+        <tr>
+            <td><div align="right">Pays:</div></td>
+            <td><div align="left">
+                <input name="UR_PAYS" type="text" id="UR_PAYS" value="{UR_PAYS}" />
+            </div></td>
+        </tr>
+        <tr>
+            <td><div align="right">T&eacute;l&eacute;phone:</div></td>
+            <td><div align="left">
+                <input name="UR_TEL" type="text" id="UR_TEL" value="{UR_TEL}" />
+            </div></td>
+        </tr>
+        
+        <tr>
+            <td colspan="2"><div align="center">
+                <label> <br>
+                <input name="pass_box" type="checkbox" id="pass_box" value="1">
+                Modifier le mot de passe                </label></div>            </td>
+        </tr>
+        <tr>
+            <td><div align="right">Mot de passe: </div></td>
+            <td><input name="UR_PASSWORD" type="password" id="UR_PASSWORD" value="{UR_PASSWORD}" /> </td>
+        </tr>
+        <tr>
+            <td colspan="2"><label>
+                    <div align="center">
+                        <input type="submit" name="Submit" value="Sauvegarder" />
+                        <input type="reset" name="Submit2" value="Reset" />
+                    </div>
+                </label></td>
+        </tr>
+    </table>
+</form>

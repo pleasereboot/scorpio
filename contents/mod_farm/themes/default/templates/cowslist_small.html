@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="/clients/remorqueslachevauchee/themes/default/css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_LIST_ROW -->
+						<tr>
+							<td class="CAT_LABEL">{ADMIN}{ID}{LABEL_FR}</td>
+							<td>{DESC_FR}</td>
+						</tr>
+						<!-- END CATS_LIST_ROW -->
+					</table>
+					{FORM_END}
+					<br />
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN CATS_NAV -->
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>{CATS_NAV}</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END CATS_NAV -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<th>	
+								Éleveurs						
+							</th>
+							<th>
+								Région							
+							</th>
+							<th>
+								Races							
+							</th>																	
+							<th>
+								membre depuis							
+							</th>															
+						</tr>
+						<tr>
+							<td colspan="4">	
+								&nbsp;							
+							</td>														
+						</tr>															
+						<!-- BEGIN ITEMS_LIST_ROW -->
+						<tr>
+							<td>	
+								{LABEL}							
+							</td>
+							<td>
+								{AREA}							
+							</td>
+							<td>
+								{BREEDS}							
+							</td>									
+							<td>
+								{CDATE}							
+							</td>															
+						</tr>
+						<tr>
+							<td colspan="4">	
+								<hr />							
+							</td>														
+						</tr>						
+						<!-- END ITEMS_LIST_ROW -->																								
+					</table>									
+					{FORM_END}
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+						{FORM_BEGIN}
+						<!-- BEGIN ITEMS_ZOOM_ROW -->						
+						<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>              
+								<td style="text-align: center;" colspan="3" rowspan="6">{IMG}<br />
+							    {IMG_SEL}{PID}</td>              
+								<td rowspan="8" width="1%">&nbsp;</td>              
+								<td bgcolor="#7C0403" width="22%"><font color="#ffffff">&nbsp;&nbsp;&nbsp;NOM</font></td>              
+								<td bgcolor="#ffffff" width="28%">&nbsp;{LABEL}</td>
+						    </tr>            
+							<tr>              
+								<td bgcolor="#7C0403"><font color="#ffffff">&nbsp;&nbsp;&nbsp;R&Eacute;GION</font></td>              
+								<td bgcolor="#ffffff">&nbsp;{AREA}</td>    
+							</tr>            
+							<tr>              
+								<td bgcolor="#7C0403"><font color="#ffffff">&nbsp;&nbsp;&nbsp;RACE</font></td>              
+								<td bgcolor="#ffffff">&nbsp;{BREEDS}</td>    
+							</tr>            
+							<tr>              
+							 	<td bgcolor="#7C0403"><font color="#ffffff"></font><font color="#ffffff">&nbsp;&nbsp;&nbsp;&Eacute;LEVEUR</font><br /></td>              
+								<td bgcolor="#ffffff">&nbsp;{BREEDER_ID}</td>    
+							</tr>            
+							<tr>              
+								<td bgcolor="#7C0403"><font color="#ffffff"></font><br /></td>              
+								<td bgcolor="#ffffff">&nbsp;</td>    
+							</tr>                
+							<tr>              
+								<td bgcolor="#7C0403"><font color="#ffffff">&nbsp;&nbsp;&nbsp;SITE INTERNET  </font></td>              
+								<td bgcolor="#ffffff">&nbsp;{JC_ID}</td>    
+							</tr>                    
+							<tr>
+							  <td colspan="3">&nbsp;</td>
+							  <td colspan="2">{JC_LINK}</td>
+						  </tr>
+							<tr>              
+								<td colspan="3">&nbsp;</td>              
+								<td colspan="2">&nbsp;</td>    
+							</tr>            
+							<tr>
+							  <td colspan="6" bgcolor="#7C0403"><font color="#ffffff">&nbsp;&nbsp;&nbsp;HISTORIQUE</font></td>
+						  </tr>
+							<tr>              
+							<td colspan="6" bgcolor="#ffffff"><br />{HISTORIQUE}<br /><br /></td>    </tr> 
+							<tr>              
+								<td colspan="6" bgcolor="#7C0403"><font color="#ffffff">&nbsp;&nbsp;&nbsp;PRODUCTION LAITI&Egrave;RE </font></td>    
+							</tr>            
+							<tr>              
+							<td colspan="6" bgcolor="#ffffff"><br />{PRODUCTION}<br /><br /></td>    </tr>            
+							            
+							            
+							<tr>              
+								<td colspan="3" bgcolor="#7C0403"><font color="#ffffff">&nbsp;&nbsp;&nbsp;EMBRYONS</font></td>              
+								<td rowspan="4">&nbsp;</td>              
+								<td colspan="2" bgcolor="#7C0403"><font color="#ffffff">&nbsp;&nbsp;&nbsp;NOUVELLES</font></td>    
+							</tr>            
+							<tr>              
+								<td colspan="3" rowspan="3" bgcolor="#ffffff" height="*">&nbsp;</td>              
+								<td colspan="2" bgcolor="#ffffff" height="*">&nbsp;</td>    </tr>            
+							<tr>              
+								<td colspan="2" bgcolor="#7C0403"><font color="#ffffff">&nbsp;&nbsp;&nbsp;MARCHE</font></td>    
+							</tr>            
+							<tr>              
+								<td colspan="2" bgcolor="#ffffff" height="*">&nbsp;</td>    
+							</tr>													
+						</table>
+						<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}
+					<!-- END ITEMS_ZOOM -->
+															
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_FIRST}</font> &#8226;
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT}</font> &#8226; 
+								<font size="-2">{NAV_LAST}</font> 
+								<br />
+								<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+								<font size="-2">{NAV_POSITION}</font> 
+							</td>
+						</tr>
+					</table>
+					<br /><br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT}</font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font>
+							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+					
+					<!-- BEGIN ITEMS_NEW -->
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="right">
+								TITRE&nbsp;:&nbsp;
+							</td>
+							<td align="left">
+								{LABEL_FR}
+							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION COURTE&nbsp;:&nbsp;
+							</td>
+							<td align="left">
+								{DESC_FR}
+							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION LONGUE&nbsp;:&nbsp;
+							</td>
+							<td align="left">
+								{HTML_FR}
+							</td>							
+						</tr>						
+					</table>
+					<!-- END ITEMS_NEW -->
+					<!-- BEGIN OLD_ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT} > </font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font> &#8226;
+								<font size="-2">{NAV_POSITION}</font> 
+							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END OLD_ITEMS_ZOOM_NAV -->
+				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center">					
+								<strong>CHOISIR UNE CATÉGORIE</strong><br />
+								<br />						  </td>
+						</tr>					
+						<tr>
+							<td align="center">					
+								<!-- BEGIN CATS_LIST_ROW -->
+								<div class="ALBUM_CAT">
+									<hr />
+
+										{LABEL}									
+										<br />
+										{DESC}									
+
+									<hr />															
+								</div>
+								<!-- END CATS_LIST_ROW -->							</td>
+						</tr>						
+					</table>
+					{FORM_END}
+					<br />
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN CATS_NAV -->
+					<div class="CATS_NAV">
+						{CATS_NAV}					</div>
+					<!-- END CATS_NAV -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					<div class="ALBUM_BOX">	
+						{FORM_BEGIN}
+						<table width="600">
+							<tr>
+								<th align="left"># de document</th>
+								<th align="left">client</th>
+								<th align="left">date</th><th align="left">type</th>
+							</tr>														
+							<!-- BEGIN ITEMS_LIST_ROW -->
+							<tr>
+								<td align="left">{ADMIN}{DOCUMENT_ID}</td>
+								<td align="left">{USER_ID}</td>
+								<td align="left">{CDATE}</td>
+								<td align="left">{TYPE}</td>
+							</tr>
+							<!-- END ITEMS_LIST_ROW -->
+						</table>
+					  {FORM_END}		
+					</div>
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+					<div class="PROD_DOCUMENT">
+						    <p>{FORM_BEGIN}									
+							  <!-- BEGIN ITEMS_ZOOM_ROW -->
+						      <br />
+						      {ADMIN}<br />
+						    </p>
+                            <TABLE WIDTH="675" BORDER="1" CELLPADDING="5" CELLSPACING="0" BORDERCOLOR="#CCCCCC" bgcolor="#FFFFFF">
+						    <TR VALIGN="TOP">
+								  <TD height="60" colspan="3" align="center" valign="middle"><font size="5"><strong><em>{PID}</em></strong></font></TD>
+							    </TR>
+								<TR VALIGN="TOP">
+								  <TD align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td valign="top"><img src="themes/default/images/logo.jpg" alt="logo" /></td>
+                                      <td><p><strong>CIRA UNIFORMES</strong><br />
+                                          <strong>Division de KIS HOLDINGS inc.</strong><br />
+46 Adastra Cres.<br />
+Markham, On, L6C 3G7<br />
+<br />
+t&eacute;l. :1-877-360-3855</p>                                      </td>
+                                    </tr>
+                                  </table>								    
+							      </TD>
+								  <TD colspan="2" rowspan="3" align="left"><table width="100%" border="0" cellspacing="0" cellpadding="3">
+                                    <tr>
+                                      <td align="right"><strong><font color="#000000">No.  doc. : </font></strong></td>
+                                      <td>{TC}{DOCUMENT_ID}</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="right"><strong><font color="#000000">Date doc. : </font></strong></td>
+                                      <td>{CDATE}</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="right"><strong>R&eacute;f&eacute;rence :</strong></td>
+                                      <td>{REF_ID}</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="right"><strong>Date due : </strong></td>
+                                      <td>{DDATE}</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="right">&nbsp;</td>
+                                      <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="right">&nbsp;</td>
+                                      <td>&nbsp;</td>
+                                    </tr>
+                                  </table>								    </TD>
+							  </TR>
+								
+								
+								<TR VALIGN="TOP">
+								  <TD align="left" valign="top" bgcolor="#666666"><strong><font color="#FFFFFF">Vendu a</font></strong><br /></TD>
+							    </TR>
+								<TR VALIGN="TOP">
+								  <TD align="left" valign="top">{USER_DETAILS}<br /></TD>
+				                </TR>
+								<TR>
+								  <TD COLSPAN="3">&nbsp;</TD>
+							    </TR>
+								<TR>
+								  <TD COLSPAN="3" bgcolor="#666666"><font color="#FFFFFF">Details</font></TD>
+							    </TR>
+								<TR>
+								  <TD height="500" COLSPAN="3" valign="top">{ITEMS_DETAILS}</TD>
+								</TR>
+								
+								<TR>
+								  <TD colspan="3" align="right">&nbsp;</TD>
+							    </TR>
+								
+								<TR>
+								  <TD rowspan="5" align="left" valign="top">Cette facture est payable &agrave; <strong>KIS HOLDINGS inc</strong>.<br />
+                                    <br />
+{COMMENTS}</TD>
+								  <TD align="right"><strong>sous-total :</strong></TD>
+								  <TD align="right">{STOTAL} $</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right">shipping :</TD>
+								  <TD align="right">{SHIPPING_CALC} $</TD>
+							    </TR>
+								<TR>
+								  <TD align="right"><strong>TPS&nbsp;:</strong></TD>
+								  <TD align="right">{TPS} $</TD>
+								</TR>
+								
+								
+								<TR>
+								  <td align="right"><strong>TVQ&nbsp;:</strong></td>
+								  <TD align="right">{TVQ} $</TD>
+							    </TR>
+								<TR>
+								  <TD align="right"><strong>Total : </strong></TD>
+								  <TD align="right"><strong>{TOTAL} $</strong></TD>
+								</TR>
+								
+								<TR>
+								  <TD colspan="3" align="left">&nbsp;</TD>
+							    </TR>
+						  </TABLE>
+							
+<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}	
+					</div>	
+			    <!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_FIRST}</font> &#8226;
+						<font size="-2">{NAV_PREV}</font> &#8226;
+						<font size="-2">{NAV_NEXT}</font> &#8226; 
+						<font size="-2">{NAV_LAST}</font> 
+						<br />
+						<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+						<font size="-2">{NAV_POSITION}</font>					</div>
+					<br /><br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+						<br />
+						<font size="-2">{NAV_RETURN}</font>					</div>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+					
+					<!-- BEGIN ITEMS_NEW -->
+					<table width="675" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="right">
+								TITRE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{LABEL_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION COURTE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{DESC_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION LONGUE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{HTML_FR}							</td>							
+						</tr>						
+
+					</table>
+					<!-- END ITEMS_NEW -->
+					<!-- BEGIN OLD_ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT} > </font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font> &#8226;
+								<font size="-2">{NAV_POSITION}</font>							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END OLD_ITEMS_ZOOM_NAV -->				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

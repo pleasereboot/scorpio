@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN STATS_SESSION -->
+					<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="right" width="200">Visiteur(s) aujourd'hui : </td>
+							<td align="left"> {TODAY}</td>
+						</tr>
+						<tr>
+							<td align="right">Visiteur(s) hier : </td>
+							<td align="left"> {YESTERDAY}</td>
+						</tr>
+						<tr>
+							<td align="right" width="200">Visiteur(s) 7 derniers jours : </td>
+							<td align="left"> {SEVENDAYS}</td>
+						</tr>						
+				  	</table>	
+					<br />
+					<br />
+					<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">												
+						<tr>
+							<td colspan="5" align="center" bgcolor="#000000"><font color="#FFFFFF">SESSION(S) EN COURS </font></td>
+						</tr>			
+						<tr>
+							<td align="left" bgcolor="#CCCCCC">MDATE</td>
+							<td align="left" bgcolor="#CCCCCC">IP</td>
+							<td align="left" bgcolor="#CCCCCC">ID</td>
+							<td align="left" bgcolor="#CCCCCC">USERID</td>
+							<td align="left" bgcolor="#CCCCCC">PAGE</td>
+						</tr>									
+						<!-- BEGIN STATS_SESSION_ROW --> 
+						<tr>
+							<td>{MDATE}</td><td>{IP}</td><td>{SESSIONID}</td><td>{USERID}</td><td>{PAGE}</td>
+						</tr>
+						<tr>
+							<td colspan="5"><hr /></td>
+						</tr>						
+						<!-- END STATS_SESSION_ROW -->
+				  	</table>
+					<br />
+					<br />
+					<!-- END STATS_SESSION -->
+					
+					<!-- BEGIN STATS_HITS -->
+					<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+						
+						<tr>
+							<td colspan="4" align="center" bgcolor="#000000"><font color="#FFFFFF">STATISTIQUES</font></td>
+						</tr>			
+						<tr>
+							<td>{IP}</td>
+						</tr>								
+						<tr>
+							<td>{IP}</td>
+						</tr>
+						<tr>
+							<td colspan="4"><hr /></td>
+						</tr>						
+				  	</table>
+					<!-- END STATS_HITS -->
+				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

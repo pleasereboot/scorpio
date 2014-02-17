@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					<div class="ALBUM_BOX">
+						{FORM_BEGIN}
+						<table width="530" border="0" align="center" cellpadding="0" cellspacing="0">		
+							<!-- BEGIN CATS_LIST_ROW -->
+							<tr>
+								<!-- BEGIN CATS_LIST_COL -->
+								<td align="center" height="125" width="250" valign="top">	
+										<br />
+	                            	{IMG_FR}		
+										<br />
+	                            	{LABEL}		
+								</td>
+								<!-- END CATS_LIST_COL -->
+							</tr>	
+					  		<!-- END CATS_LIST_ROW -->							
+						</table>
+						{FORM_END}
+					</div>	
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{DESC}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN CATS_NAV -->
+					<div class="CATS_NAV">
+						{CATS_NAV}		
+					</div>
+					<!-- END CATS_NAV -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					<div class="ALBUM_BOX">
+						{FORM_BEGIN}
+						<table width="530" border="0" align="center" cellpadding="0" cellspacing="0">		
+							<!-- BEGIN ITEMS_LIST_ROW -->
+							<tr>
+								<!-- BEGIN ITEMS_LIST_COL -->
+								<td align="center" height="150">
+	                            		{IMG}	
+										<br />
+								{ADMIN}{LABEL}
+								</td>
+								<!-- END ITEMS_LIST_COL -->
+							</tr>	
+					  		<!-- END ITEMS_LIST_ROW -->							
+						</table>
+						{FORM_END}
+						<hr />
+					</div>	
+				
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<div class="ALBUM_BOX">
+						{FORM_BEGIN}									
+							<!-- BEGIN ITEMS_ZOOM_ROW -->
+								<table width="530" align="center" bgcolor="#FFFFFF">													
+									<tr>
+										<td align="left">{ADMIN}{DESC}</td>
+									</tr>							
+								</table>
+								<hr class="SEP_L">
+							<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}	
+					</div>	
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_FIRST}</font> &#8226;
+						<font size="-2">{NAV_PREV}</font> &#8226;
+						<font size="-2">{NAV_NEXT}</font> &#8226; 
+						<font size="-2">{NAV_LAST}</font> 
+						<br />
+						<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+						<font size="-2">{NAV_POSITION}</font>					</div>
+					<br /><br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+						<br />
+						<font size="-2">{NAV_RETURN}</font>					</div>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+					
+					<!-- BEGIN ITEMS_NEW -->
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="right">
+								TITRE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{LABEL_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION COURTE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{DESC_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION LONGUE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{HTML_FR}							</td>							
+						</tr>						
+
+					</table>
+					<!-- END ITEMS_NEW -->
+					<!-- BEGIN OLD_ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT} > </font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font> &#8226;
+								<font size="-2">{NAV_POSITION}</font>							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END OLD_ITEMS_ZOOM_NAV -->				</td>
+		  	
+		</table>
+	</body>
+</html>	
+	

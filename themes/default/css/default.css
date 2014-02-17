@@ -1,0 +1,303 @@
+
+/* ------------------ GENERAL ------------------- */ 
+	BODY { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; background-color:#48672A; color:#48672A; background-image:url(../images/body_back.jpg);
+		background-repeat:repeat-x; background-position:top; text-align: center; 	}
+
+	h2 { color: #24516A; font-size: medium; margin:0px 0px 5px 0px; }
+	h3 { color: #999999; font-size: small; margin:0px 0px 2px 0px; }
+	h6 { font-size: xx-small; } 
+	
+	a { font-weight: bold; color:#A5C35D; }
+		a:link { text-decoration: none; color:#A5C35D; }
+		a:visited { text-decoration: none; color:#A5C35D; }
+		a:hover { text-decoration: underline; color:#A5C35D; }
+		a:active { text-decoration: underline; color:#A5C35D; }
+	
+	hr { width:300px; height:1px; text-align:center; color:#DDDDDD; } 
+	
+	table.admin { width:90%;  }
+		th { color:#000000; }
+	
+	.SEP_SHORT { text-align:center; height:1px; width:100%; }
+	.DEBUG { border:solid 2px #000000; border-style: ridge; } 
+	.typotitre { color: #999999; font-size: 14pt; font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-weight: bold; line-height: 18px; letter-spacing: 2px; padding-left: 0 }
+	.INPUT_SMALL { width:30px; text-align:center; border-style:inherit; } 
+
+	.PAGE_TITLE { width:100%; font-size:11pt; height:40px; margin:0px 0px 0px 20px; padding:50px 0px 0px 0px; font-style:italic; text-transform: uppercase; font-weight: bold; text-align: left; color:#48672A;overflow:hidden; }
+	.CONTENT_TITLE { width:100%;  font-size:11pt;margin:0px 0px 0px 25px; padding:0px 0px 15px 0px; font-style:italic; text-transform: uppercase; font-weight: bold; text-align: left; color:#48672A; overflow:hidden;  }
+		.CONTENT_TITLE a { color:#48672A; }	 
+		
+	.SEP_S {  width:275px; height:1px;  color:#A5C35D; margin:10px 20px 10px 20px; }
+	.SEP_L {  width:550px; height:1px; color:#F8ECE0; margin:20px 0px 20px 0px; }
+	
+	.filter { width:230%;height:100% }
+	
+	.MENU_USER { background-color:orange; color: #000000; }
+		
+/* ------------------ LAYOUTS ------------------- */
+	/* ------------------ SPLASH ------------------- */			
+		.LAYOUT_SPLASH { position:relative; width:800px; margin-right: auto; margin-left: auto; text-align: left; }
+
+		/* MIDLLE */
+			.SPLASH_MIDDLE { float:left; padding-top:0px; background-color:#FFFFFF; width:800px; }
+
+		/* CENTER */
+			.SPLASH_MIDDLE_CENTER { float:left; text-align: left; vertical-align: top; }
+
+	/* ------------------ FULL ------------------- */
+		.LAYOUT_FULL { margin: 0px auto 0px auto; position:relative; background-color:#ffffff; background-image:url(../images/full_back.jpg); width:1040px; text-align:center;}
+			.FULL_LEFT { float:left; width:30px; clear: none; vertical-align: top; color: #FFFFFF; position: relative; }
+			.FULL_RIGHT { float:right; width:30px; clear: none; vertical-align: top; color: #FFFFFF; position: relative; }
+
+		.LAYOUT_SANTE { position:relative; background-color: white; width:800px; background-image:url(../images/sante_back.jpg); background-repeat:repeat-y;margin-right:auto; margin-left:auto; text-align:center;}
+			.SANTE_LEFT { float:left; width:30px; clear: none; vertical-align: top; color: #FFFFFF; position: relative; }
+			.SANTE_RIGHT { float:right; width:30px; clear: none; vertical-align: top; color: #FFFFFF; position: relative; }			
+		
+		/* ---------------- TOP ----------------- */
+			/*
+.FULL_TOP_CONTAINER { background-position:top right; width:1000px; height:290px; margin:0px auto 0px auto; color: #999999; overflow:hidden; vertical-align:top; position:relative; z-index:3; background-color:#FFFFFF; }
+*/
+
+			.FULL_TOP_CONTAINER { width:1040px; height:380px; padding:0px 0px 0px 0px; color: #999999; overflow:hidden; vertical-align:top; position:relative; z-index:3; /*background-color:#FFFFFF; background-image:url(../images/top_back.jpg);*/ }
+				.FULL_TOP_LOGO { width:250px; height:97px; overflow:hidden;  float:left; text-align:left} 
+				.FULL_TOP_MENU { width:1000px; height: 40px; margin:305px 0px 0px 0px; overflow:hidden;  text-align:center; vertical-align:bottom } 
+				.FULL_TOP_BANNER { padding:0px 0px 0px 0px; width:1000px;  overflow:hidden; vertical-align:middle;}
+				.FULL_TOP_CONTENT { width:1000px; color: #999999; background-color:#999999; overflow:hidden; }
+
+		/* ---------------- MIDDLE ----------------- */
+			.FULL_MIDDLE_CONTAINER { width:1040px; z-index:-1; margin:0px auto 0px auto; padding:0px 0px 0px 0px; vertical-align:top; overflow:hidden; /**/background-image:url(../images/full_back.jpg); background-repeat:repeat-y; }
+
+			/* LEFT */
+				.MIDDLE_LEFT_CONTAINER { float:left; width:200px; overflow:hidden; }
+					.MIDDLE_LEFT_FILL { float:left; width:200px; background-repeat:repeat-x; height:358px; }
+
+			/* CENTER */
+				.MIDDLE_CENTER_CONTAINER { float:left; width:1000px; /*height:500px;*/ vertical-align: top; overflow:hidden;background-image:url(../images/middle_back.jpg); background-repeat:no-repeat; padding:0px 20px 0px 20px;}
+					.MIDDLE_CENTER_CONTENT { width:1000px; text-align: left; vertical-align: top; overflow:hidden;}
+
+			/* RIGHT */
+				.MIDDLE_RIGHT { float:left; margin:1px 1px 1px 1px; vertical-align:top; width:168px; color:#FF3399; overflow:hidden; }
+					.MIDDLE_RIGHT_CONTENT { width:194px; float:left; text-align: left; vertical-align: top; margin-top: 25px; position:relative; }
+
+		/* ---------------- BOTTOM ----------------- */		
+			.FULL_BOTTOM_CONTAINER { width:1040px; height:70px; color: #000000; position:relative; overflow:hidden; padding:0px 0px 0px 0px; z-index:3; background-color:#FFFFFF; background-image:url(../images/bottom_back.jpg); }
+				.FULL_BOTTOM_CONTENT { width:1000px; overflow:hidden; position:relative; z-index:3; }
+				.FULL_BOTTOM a { color: #000000; }
+				.FOOTER_CREDITS { font-size:9px; padding:40px 20px 0px 20px; /*height:40px;*/ width:1000px; vertical-align:middle; text-align:center; position:relative;}
+				.FOOTER_CREDITS a { color: #000000;}
+
+/* ---------------- PAGES ----------------- */
+/*
+		.PAGE_DEFAULT { width:1000px; position:relative; vertical-align:top; overflow:hidden; }
+			.DEFAULT_S { width:288px; overflow:hidden; float:left; position:relative; vertical-align:top; }
+			.DEFAULT_L { width:712px; overflow:hidden; float:left; position:relative; vertical-align:top; }
+*/
+
+		.PAGE_DEFAULT { width:1000px; position:relative; vertical-align:top;  background-image:url(../images/page_back.jpg); background-repeat:no-repeat; overflow:hidden; }
+			.DEFAULT_S { width:325px; padding:0px 8px 0px 9px; overflow:hidden; /*height:400px; background-image:url(../images/left_back.jpg);*/ background-repeat:no-repeat; float:left; position:relative; vertical-align:top; }
+				.DEFAULT_S_CONTENT { width:300px; margin:0px 10px 0px 15px; text-align:center;}
+			.DEFAULT_L { width:975px; padding:0px 8px 0px 10px; overflow:hidden; /*background-image:url(../images/main_back.jpg)*/; background-repeat:no-repeat; float:left; position:relative; vertical-align:top; }
+				.DEFAULT_L_CONTENT {}
+
+		.PAGE_HOME{ width:1000px; position:relative; vertical-align:top; overflow:hidden; }
+			.HOME_S { width:275px; float:left; position:relative; vertical-align:top; }
+			.HOME_L { width:1000px; overflow:hidden; float:left; position:relative; vertical-align:top; }
+
+	/* ---------------- MAIN ----------------- */
+		.MAIN_BOX { width:975px;  /* background-image:url(../images/middlecenter_back.jpg); */ background-repeat:no-repeat; overflow:hidden; }
+			.MAIN {	width:960px; padding:0px 12.5px 0px 12.5px; /*padding-left:2.5%;padding-right:2.5%;*/ position:relative;vertical-align:top;}
+				.MAIN_CONTENT { width:1000px; float:left; overflow:hidden; margin:0px 15px 0px 15px; }  		
+		.MAIN_DEFAULT 	{width:100%; height:400px;padding:25px 0px 0px 0px; position:relative; vertical-align:top;}	
+		.MAIN_ACCUEIL 	{width:100%; height:400px; overflow:hidden; position:relative; vertical-align:top;background-image:url(../images/accueil_back.jpg); background-repeat:no-repeat; }	
+		.MAIN_PROFIL 	{width:100%; position:relative; vertical-align:top; }
+		.MAIN_PRODUCTS 	{width:675px;float:left; margin:0px 6px 0px 6px; position:relative; vertical-align:top; }
+
+		.MAIN_BOX_LARGE { width:600px; margin:50px 0px 0px 100px; }
+
+
+	/* MAIN DEFAULT */	
+		.MAIN_LIST { width:796px; float:left; margin:1px 2px 1px 2px; position:relative; vertical-align: top; /*background-color:#D3EEF7;*/}
+	
+	.MAIN_IFRAME { width:340px; margin: 1px 230px 1px 230px; /*float:left;*/position:relative; vertical-align: top; background-color:#CCCCCC; text-align:center; }
+
+/* ADMIN */
+	.LAYOUT_ADMIN { width:800px; clear:both; margin-bottom:0px; padding-top:0px; background-color: #FFFFFF; }
+		.ADMIN_TOP { float:left; width:800px; clear: both; background-color:#000000; }
+		.ADMIN_RIGHT { float:left; width:2px; border: 2px #000000; border-style: ridge; }
+		.ADMIN_MAIN { width:100%; float:left; clear: right; text-align: left; background-color:#FFFFFF; }
+		.ADMIN_PAGE { float:left; width:100%; height:300px; padding:0px; clear: right; background-color:#FFFFFF; }
+		.ADMIN_BOTTOM { float:left; width:760px; clear: both; background-color:#000000; }
+
+/* ---------------- NEWS ----------------- */	
+	.NEWS_BOX { margin:0px 0px 0px 10px; }
+		.NEWS_ITEM {  margin:0px 0px 20px 0px; }
+			.NEWS_TITLE { padding:0px 0px 3px 0px; font-size:larger; font-weight:bold; }
+			.NEWS_DESC {   color:#A5C35D;padding:15px 25px 15px 25px; }		
+			.NEWS_INFOS {  border-bottom:solid 1px #CCCCCC; color:#BBBBBB; padding:0px 0px 5px 0px; margin:2px 25px 2px 25px; font-size:x-small; text-align:left;  }	
+		
+/* ---------------- NEWS SMALL ----------------- */	
+	.NEWS_SMALL_ITEM { width:275px; position:relative; vertical-align:middle; margin:0px auto 0px auto; padding:0px 10px 5px 10px; text-align:left; }
+		.NEWS_SMALL_ITEM_DATE { width:200px; font-size: smaller; color: #48672A; } 
+		.NEWS_SMALL_ITEM_TITLE { width:275px; position:relative; font-size: small; font-weight:normal; }
+			.NEWS_SMALL_ITEM_TITLE a { font-size: small; font-weight:bold; color:#A5C35D; }
+		.NEWS_SMALL_ITEM_MORE { width:200px; font-size: smaller; color: #000000; text-align:right; }
+		.NEWS_SMALL_ITEM_DESC { margin:5px 0px 0px 0px; width:250px; text-align:center; position:relative; color:#BA9159; }
+		img.news { border:thick #350D0D solid; }
+
+/* ---------------- LINK SMALL ----------------- */	
+	.LINKS_SMALL_ITEM { width:230px; position:relative; vertical-align:middle; margin:0px auto 0px auto; padding:0px 20px 5px 0px; text-align:left; }
+		.LINKS_SMALL_ITEM_DATE { width:200px; font-size: smaller; color: #954E1C; } 
+		.LINKS_SMALL_ITEM_TITLE { width:230px; position:relative; font-size: small; font-weight:normal; }
+			.LINKS_SMALL_ITEM_TITLE a { font-size: small; font-weight:bold;  }
+		.LINKS_SMALL_ITEM_MORE { width:200px; font-size: smaller; color: #000000; text-align:right; }
+		.LINKS_SMALL_ITEM_DESC { margin:5px 0px 0px 0px; width:200px; text-align:center; position:relative; color:#C0A062; }
+		img.linkss { border:thick #350D0D solid; }		
+		
+		
+/* ---------------- PRODUCTS ----------------- */ 
+	.PRODUCT_BOX { margin:10px 0px 0px 0px; text-align:center; }
+	.CART_SMALL { width:238px; margin:10px 25px 0px 25px; text-align:left; font-size:x-small; }
+
+
+/* ---------------- FARM ----------------- */
+	.FARM_BOX { margin:5px 20px 0px 20px; text-align:center; width:930px; overflow:hidden;}
+		.ALBUM_CAT { float:left; margin:0px auto 0px auto; width:270px; overflow:hidden; text-align:center; padding:0px 10px 0px 10px; /*border: solid #CCCCCC 1px;*/  }
+			.ALBUM_CAT_IMG { width:250px; }
+			.ALBUM_CAT_TITLE {  color:#000000; width:250px; text-transform: uppercase; position:relative; vertical-align:middle; margin: 0px 0px 0px 0px; text-align:center; overflow:hidden; }
+				.ALBUM_CAT_TITLE a { color:#000000; }
+			.ALBUM_CAT_DESC { width:240px; position:relative; vertical-align:middle; margin:4px 4px 4px 4px; text-align:center; overflow:hidden;}
+				.ALBUM_CAT_DESC a { color:#8C4A0E; }
+
+		.FARM_ITEM { margin:0px 10px 10px 0px; width:430px; height:300px; overflow:hidden; display:inline; float:left; padding:10px; text-align:center; border: solid #A5C35D 1px; }
+			.FARM_ITEM_IMG { padding:5px 5px 5px 5px; border:solid 2px #CCCCCC; }
+			.FARM_ITEM_DET { width:280px; float:right; color:#FFFFFF; }
+			.FARM_ITEM_LABEL { margin:5px 0px 0px 0px; width:280px; text-align:center; position:relative; font-weight:bold; color:#000079; }
+				.FARM_ITEM_LABEL a { color:#000079; }
+			.FARM_ITEM_DESC { margin:5px 0px 0px 0px; width:280px; text-align:center; position:relative; color:#C0A062; }
+
+			img.album { border:thick #350D0D solid; }
+
+/* ---------------- ALBUM ----------------- */
+	.ALBUM_BOX { margin:5px 0px 0px 0px; text-align:center; width:450px; overflow:hidden;}
+		.ALBUM_CAT { float:left; margin:0px auto 0px auto; width:270px; overflow:hidden; text-align:center; padding:0px 10px 0px 10px; /*border: solid #CCCCCC 1px;*/  }
+			.ALBUM_CAT_IMG { width:250px; }
+			.ALBUM_CAT_TITLE {  color:#000000; width:250px; text-transform: uppercase; position:relative; vertical-align:middle; margin: 0px 0px 0px 0px; text-align:center; overflow:hidden; }
+				.ALBUM_CAT_TITLE a { color:#000000; }
+			.ALBUM_CAT_DESC { width:240px; position:relative; vertical-align:middle; margin:4px 4px 4px 4px; text-align:center; overflow:hidden;}
+				.ALBUM_CAT_DESC a { color:#8C4A0E; }
+		
+		.ALBUM_ITEM { margin:0px auto 0px auto; width:280px; overflow:hidden; display:inline; float:left; padding:10px 10px 10px 10px; text-align:center; border: solid #0E4488 0px; }
+			.ALBUM_ITEM_IMG { padding:5px 5px 5px 5px; border:solid 2px #CCCCCC; }
+			.ALBUM_ITEM_DET { width:280px; float:right; color:#FFFFFF; }
+			.ALBUM_ITEM_LABEL { margin:5px 0px 0px 0px; width:280px; text-align:center; position:relative; font-weight:bold; color:#000079; }
+				.ALBUM_ITEM_LABEL a { color:#000079; }
+			.ALBUM_ITEM_DESC { margin:5px 0px 0px 0px; width:280px; text-align:center; position:relative; color:#C0A062; }
+			
+			img.album { border:thick #350D0D solid; } 
+
+	.CATS_NAV { width:630px; position:relative; vertical-align:middle; text-align:left;  padding:5px 0px 5px 0px; clear:both; }
+	.ITEMS_NAV { width:630px; position:relative; vertical-align:middle; text-align:center; /* background-color:#F6F3C2; */ padding:5px 0px 5px 0px; clear:both; }
+	.BORDER_TITLE { font-size: medium; font-weight: bold; text-align: left; text-indent:10px; margin-top:5px; margin-bottom:10px; color:#000000; }
+	.CAT_LABEL { font-weight: bold; text-align: left; margin-bottom:5px; color:#6C4900; }
+
+
+/* MENU */
+	.MENU { /*background-color:#CCCCCC;*/ text-align:center;  height: 40px; margin:0px auto 0px auto; font-family:Verdana, Arial, Helvetica, sans-serif; text-transform:uppercase; font-weight:normal; overflow:hidden; }
+
+		.MENU a { color:#FFFFFF; }
+
+		.MENU_L1_NO { height: 14px; overflow:hidden;display:inline-block; float:left; text-align:center;padding:18px 7px 0px 0px; margin:0px 0px 0px 10px; vertical-align:bottom; font-size:12px; }	
+			.MENU_L1_NO a:hover { color:#FFFFFF }
+			.MENU_L1_NO a { color:#FFFFFF; text-decoration:none; }
+			.MENU_L1_NO a:visited { color:#FFFFFF; }
+		
+		.MENU_L1_ACT { height: 14px; overflow:hidden;display:inline-block; float:left; text-align:center;padding:18px 7px 0px 0px; margin:0px 0px 0px 10px; vertical-align:bottom; font-size:12px; }		
+			.MENU_L1_ACT a:hover { color:#FFFFFF; } 
+			.MENU_L1_ACT a { color:#FFFFFF; }
+			.MENU_L1_ACT a:visited { color:#FFFFFF; }
+			
+		.MENU_L2_NO { text-align:center; padding:10px 10px 10px 0px; margin:0px 0px 0px 0px; width:275px; height:12px; vertical-align:middle; font-size:10px; }
+			.MENU_L2_NO a:hover { color:#FFFFFF; text-decoration:none; }
+			.MENU_L2_NO a { color:#FFFFFF; text-decoration:none; }	
+			.MENU_L2_NO a:visited { color:#FFFFFF; }
+
+		.MENU_L2_ACT { text-align:center; padding:10px 0px 10px 0px; margin:0px 0px 0px 0px; background-color:#610B0B; width:275px; height:12px; vertical-align:middle; font-size:10px; }
+			.MENU_L2_ACT a:hover { color:#FFFFFF; }
+			.MENU_L2_ACT a { }
+			
+/* MENU */
+	.MENU_2 {	 margin:10px auto 0px auto; font-family:Verdana, Arial, Helvetica, sans-serif; text-transform:uppercase; font-weight:normal;}
+		.MENU_2 a {color:#A5C35D;}	
+			
+		.MENU_2_L1_NO { text-transform:uppercase;font-size:12px;}
+			.MENU_2_L1_NO a:hover { color:#D4E3E8 }	
+			.MENU_2_L1_NO a {color:#A5C35D;text-decoration:none;}		
+			.MENU_2_L1_NO a:visited {color:#A5C35D;} 
+		
+		.MENU_2_L1_ACT { text-transform:uppercase;font-size:12px;}
+			.MENU_2_L1_ACT a:hover {color:#A5C35D;}
+			.MENU_2_L1_ACT a {color:#A5C35D;}
+		
+		.MENU_2_L2_NO { text-transform:uppercase;font-size:11px; padding:0px 0px 0px 20px}
+			.MENU_2_L2_NO a:hover { color:#A5C35D; text-decoration:none; }	
+			.MENU_2_L2_NO a {color:#A5C35D;text-decoration:none;}		
+			.MENU_2_L2_NO a:visited {color:#A5C35D;}
+		
+		.MENU_2_L2_ACT { text-transform:uppercase;font-size:11px; padding:0px 0px 0px 20px}
+			.MENU_2_L2_ACT a:hover {color:#A5C35D;}
+			.MENU_2_L2_ACT a {}
+
+	.MENU_TOP { background-color:#CCCCCC; color: #000000; }
+	.GOD_BAR { font-size:smaller; background-color:#FFFF66; color: #000000; }
+	.ADMIN_BAR { background-color:#66FF99; color: #000000; }
+	.ADMIN_TOOLS { float:left; width:auto; padding-left:5px; padding-right:5px; background-color:#FFCC66; color: #000000; }
+		.ADMIN_TOOLS a { background-color:#FFCC66; color: #000000; }
+
+	.USER_BAR { background-color:#CCCCCC; }
+
+	.RTE_BOX { width:500px; padding:0px 20px 10px 20px; }
+	.RTE_BACK {  color:#000000; }
+	.ALERT_BOX { width:100%; margin:25px 0px 0px 0px; }
+
+	.MESSAGE_USER_GOOD { width:100%; /*margin:50px 1px 1px 1px;*/ background-color:#00CC00; line-height: 2; font-size: small; text-align: center; color: #FFFFFF; }
+	.MESSAGE_USER_BAD { width:100%; /*margin:50px 1px 1px 1px;*/ background-color:#FF0000; line-height: 2; font-size: small; text-align: center; color: #FFFFFF; }
+	
+	.COLLAPSE { height: 1em; overflow:hidden; }
+		.COLLAPSE:hover { height:auto; }
+	
+	.ACCUEIL_FORM { width:458px; vertical-align:top; padding:15px 0px 0px 0px; text-align:left; overflow:hidden; }
+	
+	.FORM_SEARCH { background-image:url(piton.jpg); }
+	
+	.ACCOUNT_SMALL_BOX { width:100%; text-align:center; }	
+	
+/* SYSTEM */	
+	.SYSTEM_EDIT_BOX { width:500px; overflow:hidden; text-align:center; padding: 5px 0px 5px 5px; margin-right:auto; margin-left:auto; }
+		.FIELD_BOX { float:left; width:490px; background-color:#666666; vertical-align:middle; margin:0px 0px 5px 0px; clear:both; }
+			.FIELD_LABEL { width:167px; float:left; text-align:right; background-color:#000000; margin:5px 2.5px 5px 5px; padding:2px 3px 3px 0px; overflow:hidden; font-size:small; font-weight:bold; color:#FFFFFF; }
+			.FIELD_VALUE { width:300px; float:left; margin:5px 2.5px 5px 2.5px; overflow:hidden; background-color:#666666; vertical-align:middle; text-align:left; }
+			.FIELD_VALUE_IMAGE { width:480px; float:left; margin:0px 2.5px 5px 2.5px; overflow:hidden; background-color:#666666; vertical-align:middle; text-align:center; }
+		
+		.FIELD_BOX_LARGE { float:left; width:480px; background-color:#666666; padding:5px 5px 5px 5px; /*height:310px;*/ vertical-align:middle; margin:0px 0px 5px 0px; overflow:hidden; clear:both; }
+			.FIELD_LABEL_LARGE { width:167px; text-align:left; background-color:#000000; margin-right:2.5px; padding:2px 3px 0px 0px; overflow:hidden; height:18px; font-size:small; font-weight:bold; color:#FFFFFF; }
+			.FIELD_VALUE_LARGE { width:480px; margin-top:2.5px; overflow:hidden; background-color:#666666; vertical-align:middle; text-align:left; clear:both; }
+
+			.FIELD_DATE_OUTPUT { background-color:#FFFFFF; display:inline; margin:0px 0px 7px 3px; padding:2px 2px 2px 2px; }
+
+	#live_content{ 
+		margin: 0; 
+		top: 10px;
+		left: 10px;
+		/*margin-left: 40%;  This gets it relatively center on the screen */
+		/*margin-right: 40%;  This gets it relatively center on the screen */
+		margin-top: 50px; /* Makes it a little off the top of the screen */
+		padding-top: 10px; /*  Make the text not touching the top on the login box */
+		/*width: 500px;  For centering it on the screen */
+		/*height: 150px;  The height of the login box */
+		position: absolute; /* Makes sure its absolute so it doesn't dock with everything else */
+		background: #FBFBF0; /* Login Box background color. Change this if desired. */
+		border: solid #000000 2px; /* Makes a black border around the login box */
+		z-index: 9; /* Makes it on top of everything else */
+		font-family: arial; /* Sets the font */
+		visibility: hidden; /* Makes it hidden at first. Very Important.*/
+	}

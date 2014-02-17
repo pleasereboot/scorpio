@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="/clients/remorqueslachevauchee/themes/default/css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_LIST_ROW -->
+						<tr>
+							<td class="PAGE_TITLE">{ID}{LABEL_FR}</td>
+							<td>{DESC_FR}</td>
+						</tr>
+						<!-- END CATS_LIST_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					{FORM_BEGIN}
+					<!-- BEGIN ITEMS_LIST_ROW -->
+					<div style="width:91%;margin-left:2.5%;padding:2%;border-bottom-color:#CCCCCC;border-bottom-width:1px;border-bottom-style:dotted;float:left;">
+						<div style="width:75%; font-size: large; padding-bottom:10px; color: #FFFFFF;float:left;">
+							{ADMIN}{ZOOM}{LABEL_FR}{ORDER}
+						</div>	
+						<div style="float:right;">
+							{CDATE}
+						</div>
+						<div style="width:98%;float:left;">
+							<div style="float:right; clear:none; padding-bottom: 10px; padding-left: 10px;">
+								{IMG_FR}								
+							</div>	
+							{DESC_FR}
+							<br />
+							<br />
+							{HTML_FR}
+						</div>						
+					</div>
+					<!-- END ITEMS_LIST_ROW -->
+					{FORM_END}
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+						{FORM_BEGIN}
+						<!-- BEGIN ITEMS_ZOOM_ROW -->						
+						<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>
+									{ADMIN}{HTML}
+								</td>						
+							</tr>																												
+						</table>
+						<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_FIRST}</font> &#8226;
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT}</font> &#8226; 
+								<font size="-2">{NAV_LAST}</font> 
+								<br />
+								<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+								<font size="-2">{NAV_POSITION}</font> 
+							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN NAV_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2"> < <a href="{ITEMS_PREV_URL}">{ITEMS_PREV_LABEL}</a></font> &#8226;
+								<font size="-2"><a href="{ITEMS_NEXT_URL}">{ITEMS_NEXT_LABEL}</a> > </font> 
+								<br />
+								<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+								<font size="-2">{ITEMS_POSITION}</font> 
+							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END NAV_ZOOM_NAV -->
+				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center">					
+								<strong>CHOISIR UNE CATÉGORIE</strong><br />
+								<br />						  </td>
+						</tr>					
+						<tr>
+							<td align="center">					
+								<!-- BEGIN CATS_LIST_ROW -->
+								<div class="ALBUM_CAT">
+									<hr />
+
+										{LABEL}									
+										<br />
+										{DESC}									
+
+									<hr />															
+								</div>
+								<!-- END CATS_LIST_ROW -->							</td>
+						</tr>						
+					</table>
+					{FORM_END}
+					<br />
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+                   
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN CATS_NAV -->
+					<div class="CATS_NAV">
+						{CATS_NAV}					</div>
+					<!-- END CATS_NAV -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					<div class="ALBUM_BOX">	
+						{FORM_BEGIN}
+						<table width="100%">
+			  <tr>
+								<th align="center">Code style</th>
+						<th align="center">Description</th>
+						<th align="center">Couleur</th>
+                                <th align="center">t qty</th>
+						<th align="center">Prix unitaire</th>
+						<th align="center">Montant</th>
+						  </tr>														
+							<!-- BEGIN ITEMS_LIST_ROW -->
+							<tr>
+								<td colspan="6"><hr /></td>
+							</tr>                             
+							<tr>
+								<td align="left">{ADMIN}<strong>{NAME}</strong></td>
+							  <td align="left">{PRODUCT_DESC}</td>
+								<td align="left">{PRODUCT_COLOR}</td>
+                                <td align="right"></td>
+                                <td align="right"></td>
+                              <td align="right"></td>
+						  </tr>
+							<tr>
+							  <td align="left" colspan="6">
+                               	  <table width="605"> 
+                                   	  <tr>
+                                   		  <td align="center">XXS</td>
+                                    		<td align="center">XS</td>
+                                    		<td align="center">S</td>
+                                    		<td align="center">M</td>
+                                    		<td align="center">L</td>
+                                    		<td align="center">XL</td>
+                                    		<td align="center">XXL</td>
+                                    		<td align="center">1</td>
+                                    		<td align="center">3</td>
+                                    		<td align="center">5</td>
+                                    		<td align="center">7</td>
+                                    		<td align="center">9</td>
+                                    		<td align="center">11</td>
+                                    		<td align="center">13</td>
+                                    		<td align="center">15</td>
+                                    		<td align="center">17</td>
+                                    		<td align="center">19</td>
+                                        </tr>
+                                    	<tr>
+                                    		<td>{SIZE_XXS}</td><td>{SIZE_XS}</td><td>{SIZE_S}</td><td>{SIZE_M}</td><td>{SIZE_L}</td><td>{SIZE_XL}</td><td>{SIZE_XXL}</td><td>{SIZE_1}</td><td>{SIZE_3}</td><td>{SIZE_5}</td><td>{SIZE_7}</td><td>{SIZE_9}</td><td>{SIZE_11}</td><td>{SIZE_13}</td><td>{SIZE_15}</td><td>{SIZE_17}</td><td>{SIZE_19}</td>
+                                        </tr>
+                                </table>                              </td>
+							</tr>  
+ 							<tr>
+								<td align="left"></td>
+							  <td align="left"></td>
+								<td align="left"></td>
+                                <td align="right"><strong>{PRODUCT_QTY}</strong></td>
+                                <td align="right">{PRODUCT_PRICE} $</td>
+                              <td align="right"><strong>{PRODUCT_AMOUNT}</strong> $</td>
+						  </tr>                       
+							<!-- END ITEMS_LIST_ROW -->
+						</table>
+					  {FORM_END}		
+					</div>
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+					<div class="ALBUM_BOX_ZOOM">
+						{FORM_BEGIN}									
+							<!-- BEGIN ITEMS_ZOOM_ROW -->
+
+							
+							<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}	
+					</div>	
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_FIRST}</font> &#8226;
+						<font size="-2">{NAV_PREV}</font> &#8226;
+						<font size="-2">{NAV_NEXT}</font> &#8226; 
+						<font size="-2">{NAV_LAST}</font> 
+						<br />
+						<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+						<font size="-2">{NAV_POSITION}</font>					</div>
+					<br /><br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+						<br />
+						<font size="-2">{NAV_RETURN}</font>					</div>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+					
+					<!-- BEGIN ITEMS_NEW -->
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="right">
+								TITRE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{LABEL_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION COURTE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{DESC_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION LONGUE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{HTML_FR}							</td>							
+						</tr>						
+
+					</table>
+					<!-- END ITEMS_NEW -->
+					<!-- BEGIN OLD_ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT} > </font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font> &#8226;
+								<font size="-2">{NAV_POSITION}</font>							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END OLD_ITEMS_ZOOM_NAV -->				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

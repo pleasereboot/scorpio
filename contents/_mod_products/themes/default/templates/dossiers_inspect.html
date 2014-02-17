@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN ITEMS_LIST -->
+					<div class="ALBUM_BOX">	
+						{FORM_BEGIN}
+						<table width="600">
+							<tr>
+								<th>Dossier #</th><th>Nom</th><th>ADMIN</th>
+							</tr>														
+							<!-- BEGIN ITEMS_LIST_ROW -->
+							<tr>
+								<td align="left">{NUMBER}</td>
+								<td align="left">{NAME}</td>
+								<td align="center">{CUSTOM1}</td>
+							</tr>
+							<!-- END ITEMS_LIST_ROW -->
+						</table>
+						{FORM_END}		
+					</div>
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+				  <div class="ALBUM_BOX_ZOOM">
+						{FORM_BEGIN}									
+							<!-- BEGIN ITEMS_ZOOM_ROW -->
+						    <table width="600" border="1" cellspacing="0" cellpadding="0" align="center">
+								  <tr>
+									<td align="right"><strong>Date&nbsp;:</strong></td>
+									<td colspan="3">{INSPECT_DATE}</td>
+								  </tr>
+								  <tr>
+									<td align="right"><strong>Nom  du client&nbsp;:</strong></td>
+									<td colspan="3">{NAME}</td>
+								  </tr>
+								  <tr>
+									<td align="right"><strong>Adresse&nbsp;:</strong></td>
+									<td colspan="3">{ADRESS}</td>
+								  </tr>
+								  <tr>
+									<td align="right"><strong>T&eacute;l.&nbsp;: </strong></td>
+									<td colspan="3">{PHONE_HOME}</td>
+								  </tr>
+								  <tr>
+									<td colspan="4">&nbsp;</td>
+								  </tr>
+								  <tr>
+									<td><strong>1.  Service Municipal</strong></td>
+									<td>&nbsp;</td>
+									<td><strong>2. Sans service</strong></td>
+									<td>&nbsp;</td>
+								  </tr>
+								  <tr>
+									<td>Sanitaire</td>
+									<td>{SER_SANITAIRE}</td>
+									<td>Fosse  septique</td>
+									<td>{SER_FOSSE}</td>
+								  </tr>
+								  <tr>
+									<td>Pluvial</td>
+									<td>{SER_PLUVIAL}</td>
+									<td>Champs d&rsquo;&eacute;puration</td>
+									<td>{SER_CHAMPS}</td>
+								  </tr>
+								  <tr>
+									<td>Combin&eacute;</td>
+									<td>{SER_COMBINE}</td>
+									<td>Puit</td>
+									<td>{SER_PUITS}</td>
+								  </tr>
+								  <tr>
+								    <td>Aqueduc</td>
+								    <td>{SER_AQUEDUC}</td>
+								    <td>n/d</td>
+								    <td>&nbsp;</td>
+							      </tr>
+								  <tr>
+									<td>n/d</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								  </tr>
+								  <tr>
+									<td colspan="4">&nbsp;</td>
+								  </tr>
+								  
+								  <tr>
+									<td><strong>3. Type de propri&eacute;t&eacute;&nbsp;:</strong></td>
+									<td>{PROP_TYPE}</td>
+									<td><strong>4. Type de  fondation&nbsp;:</strong></td>
+									<td>{PROP_FONDATION}</td>
+								  </tr>
+								  <tr>
+									<td><strong>5. Ann&eacute;e de construction&nbsp;:</strong></td>
+									<td>{PROP_ANNEE}</td>
+									<td><strong>6. Pente  terrain&nbsp;:</strong></td>
+									<td>{PROP_PENTE}</td>
+								  </tr>
+								  <tr>
+									<td><strong>7. Descente goutti&egrave;re&nbsp;:</strong></td>
+									<td>{PROP_DESCENTE}</td>
+									<td><strong>8. Pr&eacute;sence  Fissure&nbsp;:</strong></td>
+									<td>{PROP_FISSURE}</td>
+								  </tr>
+								  
+								  <tr>
+								    <td><strong>9.  &Eacute;quipements au sous-sol</strong></td>
+								    <td>&nbsp;</td>
+								    <td>&nbsp;</td>
+								    <td>&nbsp;</td>
+							      </tr>
+								  <tr>
+								    <td colspan="4"><table width="100%" border="1" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td width="32%">&nbsp;</td>
+                                        <td width="13%"><strong>Appareil</strong></td>
+                                        <td width="10%"><strong>Clapet</strong></td>
+                                        <td width="45%"><strong>Commentaires</strong></td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong> - Douche</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Toilette</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Bain</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Laveuse</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Bo&icirc;te  			drain</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Drain Plancher</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Infiltration</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Bact&eacute;rie  			ferreuse</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Bouchon pluvial</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Bouchon  			sanitaire</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- Drain fondation</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- &Eacute;vier</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>- R&eacute;servoir sanitaire</strong></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                    </table></td>
+							      </tr>
+								  <tr>
+									<td colspan="4">&nbsp;</td>
+							  </tr>
+								  
+								  <tr>
+									<td><strong>Maison/Plan/Am&eacute;nagement</strong></td>
+									<td colspan="3">{INSP_PLAN}</td>
+								  </tr>
+								  
+								  <tr>
+									<td colspan="4">&nbsp;</td>
+								  </tr>
+								  <tr>
+									<td><strong>D&eacute;tails de l'inspection </strong></td>
+									<td colspan="3">{INSP_DETAILS}</td>
+								  </tr>
+								  <tr>
+									<td colspan="4">&nbsp;</td>
+								  </tr>
+								  <tr>
+									<td><strong>Recommendations</strong></td>
+									<td colspan="3">{INSP_RECOM}</td>
+								  </tr>
+								  <tr>
+									<td colspan="4">&nbsp;</td>
+								  </tr>
+								  
+								  <tr>
+									<td><strong>Date&nbsp;:</strong></td>
+									<td>{INSP_DATE}</td>
+									<td><strong>Signature&nbsp;:</strong></td>
+									<td>{INSP_SIGN}</td>
+								  </tr>
+								</table>
+<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}	
+					</div>	
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_FIRST}</font> &#8226;
+						<font size="-2">{NAV_PREV}</font> &#8226;
+						<font size="-2">{NAV_NEXT}</font> &#8226; 
+						<font size="-2">{NAV_LAST}</font> 
+						<br />
+						<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+						<font size="-2">{NAV_POSITION}</font>					</div>
+					<br /><br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+						<br />
+						<font size="-2">{NAV_RETURN}</font>					</div>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

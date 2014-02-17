@@ -1,0 +1,130 @@
+	.ADMIN_TOP {
+		float:left;
+		width:760px;
+		clear: both;
+		background-color:#000000;
+	}
+	
+	.ADMIN_RIGHT {
+		float:left;
+		width:2px;
+		border: 2px #000000;
+		border-style: ridge;	
+	}
+	
+	.ADMIN_MAIN {
+		width:100%;
+		float:left;
+		clear: right;
+		text-align: left;	
+		background-color:#FFFFFF;
+	}
+	
+	.ADMIN_PAGE {
+		float:left;
+		width:100%;
+		height:300px;
+		padding:0px;
+		clear: right;
+		background-color:#FFFFFF;
+	}
+	
+	.ADMIN_BOTTOM {
+		float:left;
+		width:760px;
+		clear: both;	
+		background-color:#000000;
+	}
+	
+	
+		
+		.MESSAGE_ADMIN_GOOD {
+			width:100%;
+			background-color:#006600;
+			line-height: 2;
+			font-size: small;
+			text-align: center;
+			color: #FFFFFF;
+			position:relative;
+			z-index:4;	
+		}
+	
+		.MESSAGE_ADMIN_BAD {
+			width:100%;
+			background-color:#663300;
+			line-height: 2;
+			font-size: small;
+			text-align: center;
+			color: #FFFFFF;
+			position:relative;
+			z-index:4;	
+		}
+
+	.MENU_GOD {
+		width:100%;
+		float:left;
+		text-align:left;
+		background-color:#FFFF66;
+		color: #000000;
+		font-size:smaller;
+		padding:3px;
+		margin: 3px 0px 0px 0px;
+	}
+	
+		.MENU_GOD a {
+			color: #CC6600;
+		}
+		
+	.MENU_GOD_BUTTON { 
+		/*float:left;*/
+		text-align:left;
+		background-color:#FFFF66;
+		color: #000000;
+		font-size:smaller;
+		padding:3px;
+		height:11px;
+		overflow:hidden;
+		margin: 3px 0px 0px 0px;
+		width:150px;
+	}
+	
+		.MENU_GOD_BUTTON a {
+			color: #CC6600;
+		}
+		
+	.MENU_GOD_SWITCH {
+		/*float:left;*/
+		text-align:left;
+		background-color:#FFFF66;
+		color: #000000;
+		font-size:smaller;
+		padding:3px;
+		height:11px;
+		overflow:hidden;
+		margin: 3px 0px 0px 0px;
+		width:150px;
+		
+		clear:both;
+	}
+	
+		.MENU_GOD_SWITCH:hover {
+			height:auto;
+			width:600px;
+			height:300px;
+			overflow:scroll;
+		}
+		.MENU_GOD_SWITCH a {
+			color: #CC6600;
+		}
+	
+	.MENU_ADMIN {
+		background-color:#66FF99;
+		color: #000000;
+	}
+	
+	.MENU_ADMIN a {
+		color: #CC6600;
+	}
+	
+
+

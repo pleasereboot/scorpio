@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center">					
+								<strong>CHOISIR UNE CATÉGORIE</strong><br />
+								<br />						  </td>
+						</tr>					
+						<tr>
+							<td align="center">					
+								<!-- BEGIN CATS_LIST_ROW -->
+								<div class="ALBUM_CAT">
+									<hr />
+
+										{LABEL}									
+										<br />
+										{DESC}									
+
+									<hr />															
+								</div>
+								<!-- END CATS_LIST_ROW -->							</td>
+						</tr>						
+					</table>
+					{FORM_END}
+					<br />
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN CATS_NAV -->
+					<div class="CATS_NAV">
+						{CATS_NAV}					</div>
+					<!-- END CATS_NAV -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					<div class="ALBUM_BOX">	
+						{FORM_BEGIN}
+						<table width="600">										
+							<!-- BEGIN ITEMS_LIST_ROW -->
+							<tr>
+								<td width="153" rowspan="2" align="center">{IMG}</td>
+								<td width="75" align="left">{ADMIN}</td>
+								<td width="356" colspan="2" align="left">{NAME}</td>
+                            </tr>
+							<tr>
+								<td colspan="3" align="left">{PID}</td>
+							</tr>
+							<tr>
+								<td colspan="3" align="center"><hr /></td>
+							</tr>
+							<!-- END ITEMS_LIST_ROW -->
+						</table>
+					  {FORM_END}		
+					</div>
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+					<div class="ALBUM_BOX_ZOOM">
+						{FORM_BEGIN}									
+							<!-- BEGIN ITEMS_ZOOM_ROW -->
+							<TABLE WIDTH="600" BORDER="1" BORDERCOLOR="#CCCCCC" CELLPADDING="5" CELLSPACING="0">
+							  <TBODY>
+								<TR VALIGN="TOP">
+								  <TD align="right"><strong>Date de l&rsquo;appel&nbsp;:</strong></TD>
+								  <TD>{CALL_DATE}</TD>
+								  <TD align="right"><strong>Heure&nbsp;:</strong></TD>
+								  <TD>&nbsp;</TD>
+								</TR>
+								
+								<TR VALIGN="TOP">
+								  <TD align="right"><strong>Nom de l&rsquo;assur&eacute;&nbsp;:</strong></TD>
+								  <TD COLSPAN="3">{NAME}</TD>
+								</TR>
+								
+								<TR VALIGN="TOP">
+								  <TD align="right"><strong>Adresse&nbsp;:</strong></TD>
+								  <TD COLSPAN="3" rowspan="2">{ADRESS}</TD>
+								</TR>
+								<TR VALIGN="TOP">
+								  <TD>&nbsp;</TD>
+							    </TR>
+								
+								<TR VALIGN="BOTTOM">
+								  <TD align="right"><strong>R&eacute;s.&nbsp;:</strong></TD>
+								  <TD>{PHONE_HOME}</TD>
+								  <TD align="right"><strong>T&eacute;l&eacute;c.&nbsp;:</strong></TD>
+								  <TD>{FAX}</TD>
+							    </TR>
+								<TR VALIGN="BOTTOM">
+								  <TD align="right"><strong>Bur.&nbsp;:</strong></TD>
+								  <TD>{PHONE_OFFICE}</TD>
+								  <TD align="right"><strong>T&eacute;l&eacute;av.&nbsp;:</strong></TD>
+								  <TD>{BIPPER}</TD>
+							    </TR>
+								<TR VALIGN="BOTTOM">
+								  <TD align="right"><strong>Cell.&nbsp;:</strong></TD>
+								  <TD>{PHONE_CELL}</TD>
+								  <TD align="right"><strong>Autre&nbsp;:</strong></TD>
+								  <TD>{OTHER}</TD>
+							    </TR>
+								
+								<TR>
+								  <TD align="right"><strong>&Agrave;  				contacter&nbsp;:</strong></TD>
+								  <TD COLSPAN="3">{CONTACT}</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right"><strong>Adresse  				temporaire&nbsp;:</strong></TD>
+								  <TD COLSPAN="3">{ADRESS_TEMP}</TD>
+								</TR>
+								
+								<TR VALIGN="TOP">
+								  <TD align="right"><strong>Adresse  				du sinistre&nbsp;:</strong></TD>
+								  <TD COLSPAN="4" rowspan="2">{ADRESS_SINISTER}</TD>
+								</TR>
+								<TR>
+								  <TD>&nbsp;</TD>
+							    </TR>
+							  </TBODY>
+							  <TBODY>
+								<TR>
+								  <TD COLSPAN="4">&nbsp;</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right"><strong>Nom  				de l&rsquo;expert&nbsp;:</strong></TD>
+								  <TD>{EXPERT_NAME}</TD>
+								  <TD align="right"><strong>No dossier&nbsp;:</strong></TD>
+								  <TD>&nbsp;</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right"><strong>Bureau  				de l&rsquo;expert&nbsp;:</strong></TD>
+								  <TD>{EXPERT_OFFICE}</TD>
+								  <TD align="right"><strong>No t&eacute;l.&nbsp;:</strong></TD>
+								  <TD>{EXPERT_PHONE}</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right"><strong>Nom  				de l&rsquo;assureur&nbsp;:</strong></TD>
+								  <TD COLSPAN="3">{ASS_NAME}</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right"><strong>Num&eacute;ro  				de police&nbsp;:</strong></TD>
+								  <TD>{NUMBER}</TD>
+								  <TD align="right"><strong>No dossier&nbsp;:</strong></TD>
+								  <TD>{ASS_DOSSIER}</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right"><strong>Franchise applicable&nbsp;:</strong></TD>
+								  <TD>{ASS_FRANCHISE}</TD>
+								  <TD align="right"><strong>Montant&nbsp;:</strong></TD>
+								  <TD>{ASS_AMOUNT}</TD>
+								</TR>
+								<TR>
+								  <TD COLSPAN="4">&nbsp;</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right"><strong>Date  				de la perte&nbsp;:</strong></TD>
+								  <TD>{SINISTER_DATE}</TD>
+								  <TD align="right"><strong>Heure  				app.&nbsp;:</strong></TD>
+								  <TD>{SINISTER_TIME}</TD>
+								</TR>
+								
+								<TR>
+								  <TD align="right"><strong>Type  				de dommage&nbsp;:</strong></TD>
+								  <TD colspan="3">{SINISTER_DAMAGE}</TD>
+							    </TR>
+								
+								<TR>
+								  <TD align="right"><strong>Circonstances&nbsp;:</strong></TD>
+								  <TD COLSPAN="4" rowspan="2" valign="top">{SINISTER_CIRC}</TD>
+								</TR>
+								<TR>
+								  <TD>&nbsp;</TD>
+							    </TR>
+								
+								<TR>
+								  <TD align="right"><strong>Commentaires&nbsp;:</strong></TD>
+								  <TD COLSPAN="3" rowspan="3" valign="top">{SINISTER_COMM}</TD>
+								</TR>
+								<TR>
+								  <TD>&nbsp;</TD>
+							    </TR>
+								<TR>
+								  <TD>&nbsp;</TD>
+							    </TR>
+								
+								<TR>
+								  <TD align="right"><strong>Pr&eacute;par&eacute;  				par&nbsp;:</strong></TD>
+								  <TD>{SINISTER_PREP}</TD>
+								  <TD align="right"><strong>Approuv&eacute;  				par&nbsp;:</strong></TD>
+								  <TD>{SINISTER_APP}</TD>
+								</TR>
+							  </TBODY>
+						  </TABLE>
+							
+							<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}	
+					</div>	
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_FIRST}</font> &#8226;
+						<font size="-2">{NAV_PREV}</font> &#8226;
+						<font size="-2">{NAV_NEXT}</font> &#8226; 
+						<font size="-2">{NAV_LAST}</font> 
+						<br />
+						<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+						<font size="-2">{NAV_POSITION}</font>					</div>
+					<br /><br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+						<br />
+						<font size="-2">{NAV_RETURN}</font>					</div>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+					
+					<!-- BEGIN ITEMS_NEW -->
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="right">
+								TITRE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{LABEL_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION COURTE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{DESC_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION LONGUE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{HTML_FR}							</td>							
+						</tr>						
+
+					</table>
+					<!-- END ITEMS_NEW -->
+					<!-- BEGIN OLD_ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT} > </font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font> &#8226;
+								<font size="-2">{NAV_POSITION}</font>							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END OLD_ITEMS_ZOOM_NAV -->				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

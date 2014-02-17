@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+<!--						<tr>
+							<td align="center">					
+								<strong>CHOISIR UNE CATÉGORIE</strong><br />
+								<br />						  </td>
+						</tr>-->					
+						<tr>
+							<td align="center">					
+								<!-- BEGIN CATS_LIST_ROW -->
+								<div class="ALBUM_CAT">
+                                	<div class="ALBUM_CAT_IMG">
+                                    	{IMG_FR}		
+                                    </div>										
+									<div class="ALBUM_CAT_TITLE">
+                                    	{LABEL}		
+                                    </div>																						
+                                </div>
+						  		<!-- END CATS_LIST_ROW -->
+                          </td>
+						</tr>						
+					</table>
+					{FORM_END}
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN CATS_NAV -->
+					<div class="CATS_NAV">
+						{CATS_NAV}					</div>
+					<!-- END CATS_NAV -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					<div class="ALBUM_BOX">	
+						{FORM_BEGIN}
+						<table width="600" align="center" cellpadding="5">													
+							<!-- BEGIN ITEMS_LIST_ROW -->
+							<tr bgcolor="#FFFFFF">
+								<td align="center" width="200">{IMG}</td>
+								<td align="left" width="400">{ADMIN}<font size="+1">{STYLE}</font></td>
+						  </tr>
+							<!-- END ITEMS_LIST_ROW -->
+						</table>
+						{FORM_END}		
+					</div>
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+					<div class="ALBUM_BOX_ZOOM">
+						{FORM_BEGIN}									
+							<!-- BEGIN ITEMS_ZOOM_ROW -->
+                            <table width="600" align="center" cellspacing="5" bgcolor="#FFFFFF">													
+                                <tr>
+                                    <td width="300" align="center">{IMG}</td> 
+                                    <td width="300" align="left" valign="top"> 
+
+                          
+                                        <table width="300" align="center" >													
+                                            <tr>
+                                                <td align="left" colspan="17">{ADMIN}<strong><font size="+1">{STYLE}</font></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" colspan="17">{DESC}</td>
+                                            </tr>
+                                             <tr>
+                                            	<td>
+                                                	<br />
+
+                                                	<table width="300" align="center" >	
+                                                      <tr>
+                                                          <td align="center"><strong><font size="-1">XXS</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_XXS}</font></td>
+                                                        </tr>
+                                                      <tr>                                    		
+                                                        
+                                                          <td align="center"><strong><font size="-1">XS</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_XS}</font></td>
+                                                        </tr>
+                                                      <tr>                                    		
+                                                        
+                                                          <td align="center"><strong><font size="-1">S</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_S}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">M</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_M}</font></td>
+                                                        </tr>
+                                                      <tr>                                    		
+                                                        
+                                                          <td align="center"><strong><font size="-1">L</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_L}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">XL</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_XL}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">XXL</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_XXL}</font></td>
+                                                        </tr>
+                                                      <tr>                                   		
+                                                        
+                                                          <td align="center"><strong><font size="-1">1</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_1}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">3</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_3}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">5</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_5}</font></td>
+                                                        </tr>
+                                                      <tr>                                    		
+                                                        
+                                                          <td align="center"><strong><font size="-1">7</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_7}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">9</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_9}</font></td>
+                                                         </tr>
+                                                      <tr>                                           
+                                                          <td align="center"><strong><font size="-1">11</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_11}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">13</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_13}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                        <td align="center"><strong><font size="-1">15</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_15}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">17</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_17}</font></td>
+                                                        </tr>
+                                                      <tr>                                            
+                                                          <td align="center"><strong><font size="-1">19</font></strong></td>
+                                                        <td align="center"><font size="-1">{INSTOCK_19}</font></td>
+                                                        </tr>
+                                                     </table>
+                                                </td>
+                                            </tr>                                          
+                                        </table>
+                            		</td>
+                            	</tr>
+                            </table>
+							
+	          				<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}	
+					</div>	
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_FIRST}</font> &#8226;
+						<font size="-2">{NAV_PREV}</font> &#8226;
+						<font size="-2">{NAV_NEXT}</font> &#8226; 
+						<font size="-2">{NAV_LAST}</font> 
+						<br />
+						<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+						<font size="-2">{NAV_POSITION}</font>					</div>
+					<br /><br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+						<br />
+						<font size="-2">{NAV_RETURN}</font>					</div>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+					
+					<!-- BEGIN ITEMS_NEW -->
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="right">
+								TITRE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{LABEL_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION COURTE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{DESC_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION LONGUE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{HTML_FR}							</td>							
+						</tr>						
+
+					</table>
+					<!-- END ITEMS_NEW -->
+					<!-- BEGIN OLD_ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT} > </font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font> &#8226;
+								<font size="-2">{NAV_POSITION}</font>							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END OLD_ITEMS_ZOOM_NAV -->				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

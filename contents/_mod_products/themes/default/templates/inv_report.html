@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="../css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center">					
+								<strong>CHOISIR UNE CATÉGORIE</strong><br />
+								<br />						  </td>
+						</tr>					
+						<tr>
+							<td align="center">					
+								<!-- BEGIN CATS_LIST_ROW -->
+								<div class="ALBUM_CAT">
+                                    {LABEL}									
+                                      <br />
+                                    {DESC}																								
+                                </div>
+						  		<!-- END CATS_LIST_ROW -->
+                          </td>
+						</tr>						
+					</table>
+					{FORM_END}
+					<br />
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN CATS_NAV -->
+					<div class="CATS_NAV">
+						{CATS_NAV}					</div>
+					<!-- END CATS_NAV -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					<div class="ALBUM_BOX">	
+						{FORM_BEGIN}
+						<table width="600">													
+							<!-- BEGIN ITEMS_LIST_ROW -->
+							<tr>
+								<td colspan="18" align="left">{ADMIN}<strong>{NAME}</strong></td>
+						  </tr>
+                                    	  <tr>
+                                   		  	<td width="120" align="center"></td>
+                                    		<td width="35" align="center">XXS</td>
+                                    		<td width="35" align="center">XS</td>
+                                    		<td width="35" align="center">S</td>
+                                    		<td width="35" align="center">M</td>
+                                    		<td width="35" align="center">L</td>
+                                    		<td width="35" align="center">XL</td>
+                                    		<td width="35" align="center">XXL</td>
+                                    		<td width="35" align="center">1</td>
+                                    		<td width="35" align="center">3</td>
+                                    		<td width="35" align="center">5</td>
+                                    		<td width="35" align="center">7</td>
+                                    		<td width="35" align="center">9</td>
+                                    		<td width="35" align="center">11</td>
+                                    		<td width="35" align="center">13</td>
+                                    		<td width="35" align="center">15</td>
+                                    		<td width="35" align="center">17</td>
+                                    		<td width="35" align="center">19</td>
+                                        </tr>
+                                    	<tr>
+                                    		<td align="right">In stock</td>
+                                   		  	<td align="center"><strong>{INSTOCK_XXS}</strong></td>
+                                   		  	<td align="center"><strong>{INSTOCK_XS}</strong></td>
+                                   		  	<td align="center"><strong>{INSTOCK_S}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_M}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_L}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_XL}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_XXL}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_1}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_3}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_5}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_7}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_9}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_11}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_13}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_15}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_17}</strong></td>
+                                            <td align="center"><strong>{INSTOCK_19}</strong></td>
+                                    </tr>
+                                    	<tr>
+                                    		<td align="right">In order</td>
+                               		  	  <td align="center"><strong>{INORDER_XXS}</strong></td>
+                                   		  	<td align="center"><strong>{INORDER_XS}</strong></td>
+                                   		  	<td align="center"><strong>{INORDER_S}</strong></td>
+                                            <td align="center"><strong>{INORDER_M}</strong></td>
+                                            <td align="center"><strong>{INORDER_L}</strong></td>
+                                            <td align="center"><strong>{INORDER_XL}</strong></td>
+                                            <td align="center"><strong>{INORDER_XXL}</strong></td>
+                                            <td align="center"><strong>{INORDER_1}</strong></td>
+                                            <td align="center"><strong>{INORDER_3}</strong></td>
+                                            <td align="center"><strong>{INORDER_5}</strong></td>
+                                            <td align="center"><strong>{INORDER_7}</strong></td>
+                                            <td align="center"><strong>{INORDER_9}</strong></td>
+                                            <td align="center"><strong>{INORDER_11}</strong></td>
+                                            <td align="center"><strong>{INORDER_13}</strong></td>
+                                            <td align="center"><strong>{INORDER_15}</strong></td>
+                                            <td align="center"><strong>{INORDER_17}</strong></td>
+                                            <td align="center"><strong>{INORDER_19}</strong></td>
+                                    </tr> 
+                                    	<tr>
+                                    		<td align="right">Booked</td>
+                               		  	  <td align="center"><strong>{BOOKED_XXS}</strong></td>
+                                   		  	<td align="center"><strong>{BOOKED_XS}</strong></td>
+                                   		  	<td align="center"><strong>{BOOKED_S}</strong></td>
+                                            <td align="center"><strong>{BOOKED_M}</strong></td>
+                                            <td align="center"><strong>{BOOKED_L}</strong></td>
+                                            <td align="center"><strong>{BOOKED_XL}</strong></td>
+                                            <td align="center"><strong>{BOOKED_XXL}</strong></td>
+                                            <td align="center"><strong>{BOOKED_1}</strong></td>
+                                            <td align="center"><strong>{BOOKED_3}</strong></td>
+                                            <td align="center"><strong>{BOOKED_5}</strong></td>
+                                            <td align="center"><strong>{BOOKED_7}</strong></td>
+                                            <td align="center"><strong>{BOOKED_9}</strong></td>
+                                            <td align="center"><strong>{BOOKED_11}</strong></td>
+                                            <td align="center"><strong>{BOOKED_13}</strong></td>
+                                            <td align="center"><strong>{BOOKED_15}</strong></td>
+                                            <td align="center"><strong>{BOOKED_17}</strong></td>
+                                            <td align="center"><strong>{BOOKED_19}</strong></td>
+                                    </tr>  
+                                    	<tr>
+                                    		<td align="right">In prod</td>
+                               		  	  <td align="center"><strong>{INPROD_XXS}</strong></td>
+                                   		  	<td align="center"><strong>{INPROD_XS}</strong></td>
+                                   		  	<td align="center"><strong>{INPROD_S}</strong></td>
+                                            <td align="center"><strong>{INPROD_M}</strong></td>
+                                            <td align="center"><strong>{INPROD_L}</strong></td>
+                                            <td align="center"><strong>{INPROD_XL}</strong></td>
+                                            <td align="center"><strong>{INPROD_XXL}</strong></td>
+                                            <td align="center"><strong>{INPROD_1}</strong></td>
+                                            <td align="center"><strong>{INPROD_3}</strong></td>
+                                            <td align="center"><strong>{INPROD_5}</strong></td>
+                                            <td align="center"><strong>{INPROD_7}</strong></td>
+                                            <td align="center"><strong>{INPROD_9}</strong></td>
+                                            <td align="center"><strong>{INPROD_11}</strong></td>
+                                            <td align="center"><strong>{INPROD_13}</strong></td>
+                                            <td align="center"><strong>{INPROD_15}</strong></td>
+                                            <td align="center"><strong>{INPROD_17}</strong></td>
+                                            <td align="center"><strong>{INPROD_19}</strong></td>
+                                    </tr>  
+                                    	<tr>
+                                    		<td align="right">On sea</td>
+                               		  	  <td align="center"><strong>{ONSEA_XXS}</strong></td>
+                                   		  	<td align="center"><strong>{ONSEA_XS}</strong></td>
+                                   		  	<td align="center"><strong>{ONSEA_S}</strong></td>
+                                            <td align="center"><strong>{ONSEA_M}</strong></td>
+                                            <td align="center"><strong>{ONSEA_L}</strong></td>
+                                            <td align="center"><strong>{ONSEA_XL}</strong></td>
+                                            <td align="center"><strong>{ONSEA_XXL}</strong></td>
+                                            <td align="center"><strong>{ONSEA_1}</strong></td>
+                                            <td align="center"><strong>{ONSEA_3}</strong></td>
+                                            <td align="center"><strong>{ONSEA_5}</strong></td>
+                                            <td align="center"><strong>{ONSEA_7}</strong></td>
+                                            <td align="center"><strong>{ONSEA_9}</strong></td>
+                                            <td align="center"><strong>{ONSEA_11}</strong></td>
+                                            <td align="center"><strong>{ONSEA_13}</strong></td>
+                                            <td align="center"><strong>{ONSEA_15}</strong></td>
+                                            <td align="center"><strong>{ONSEA_17}</strong></td>
+                                            <td align="center"><strong>{ONSEA_19}</strong></td>
+                                    </tr>  
+     
+                                    <tr>
+                                        <td colspan="18" align="center"><hr /></td>
+                                  	</tr>                                   
+                                                        
+							<!-- END ITEMS_LIST_ROW -->
+						</table>
+					  {FORM_END}		
+					</div>
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+					<div class="ALBUM_BOX_ZOOM">
+						{FORM_BEGIN}									
+							<!-- BEGIN ITEMS_ZOOM_ROW -->
+							<TABLE WIDTH="550" BORDER="1" BORDERCOLOR="#CCCCCC" CELLPADDING="5" CELLSPACING="0">
+							  <TBODY>
+								<TR VALIGN="TOP">
+								  
+							
+								  <TD colspan="2" align="left">{ADMIN}</TD>
+								  
+								</TR>                              
+                              
+								<TR VALIGN="TOP">
+								  
+								  <TD width="200">{IMG}</TD>
+								  <TD rowspan="2" align="left">{LABEL}<br />
+							      {DESC}</TD>
+								  
+								</TR>
+								
+								<TR VALIGN="TOP">
+								  
+								  <TD>&nbsp;</TD>
+							    </TR>
+							  </TBODY>
+							  <TBODY>
+							  </TBODY>
+						  </TABLE>
+							
+	          <!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}	
+					</div>	
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_FIRST}</font> &#8226;
+						<font size="-2">{NAV_PREV}</font> &#8226;
+						<font size="-2">{NAV_NEXT}</font> &#8226; 
+						<font size="-2">{NAV_LAST}</font> 
+						<br />
+						<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+						<font size="-2">{NAV_POSITION}</font>					</div>
+					<br /><br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+						<br />
+						<font size="-2">{NAV_RETURN}</font>					</div>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+					
+					<!-- BEGIN ITEMS_NEW -->
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="right">
+								TITRE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{LABEL_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION COURTE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{DESC_FR}							</td>							
+						</tr>
+						<tr>
+							<td align="right">
+								DESCRIPTION LONGUE&nbsp;:&nbsp;							</td>
+							<td align="left">
+								{HTML_FR}							</td>							
+						</tr>						
+
+					</table>
+					<!-- END ITEMS_NEW -->
+					<!-- BEGIN OLD_ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT} > </font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font> &#8226;
+								<font size="-2">{NAV_POSITION}</font>							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END OLD_ITEMS_ZOOM_NAV -->				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

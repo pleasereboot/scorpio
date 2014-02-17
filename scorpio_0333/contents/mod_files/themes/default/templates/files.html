@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="/clients/remorqueslachevauchee/themes/default/css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-color:#FFFFFF">
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN FORM -->
+					<form action="" method="post" enctype="multipart/form-data" name="files">
+						<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="center" colspan="2" height="40">
+									{NUM_LINK}{FILES_THEME}{FILES_REPLACE}
+								</td>
+							</tr>	
+							<!-- BEGIN INPUT -->
+							<tr>
+								<td align="right">
+									FICHIER {NUM}&nbsp;
+								</td>
+								<td align="left">
+									&nbsp;<input name="file_{NUM}" type="file" size="27" />
+								</td>								
+							</tr>
+							<!-- END INPUT -->
+							<tr>
+								<td align="center" colspan="2">
+									<br />
+									<input name="listname_files" type="submit" value="Envoyer" />
+									<br /><br />
+								</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2" bgcolor="#FFFFCC">
+								  <p align="left"><strong><font size="-2">Pour que l'ajout d'un fichier fonctionne bien:</font></strong></p>
+								  <p align="left"><font size="-2">1) Assurez vous que l'image est plus petite que 2MB.<br />
+                                    <br />
+                                  2) Si l'image est de 1MB ou +, ajouter une seul image &agrave; la fois. <br />
+							      <br />
+							      3) Assurez vous qu'il n'y a pas d'accent dans le nom des fichiers &agrave; ajouter. ex: &quot;&egrave;&eacute;&ecirc;&euml;&quot;</font></p>
+								  <p align="left"><font size="-2">4)Assurez vous qu'il n'y ait pas de caract&egrave;re sp&eacute;ciaux dans les noms.<br />
+  ex: &quot;`&amp;%$$!&plusmn;@&pound;&cent;&curren;&not;&curren;&sup2;&brvbar;&sup3;&frac14;&sup3;&macr;&acute;~{}[]'.&Eacute;`^&uml;&quot;. </font></p>
+								  <p align="left"><font size="-2">5) Assurez vous que la longueur du nom ne soit pas plus longue que 30 caract&egrave;res. 
+  ex: &quot;abcdefghijklmnopqrstuvwxizabcd.jpg&quot;.</font></p>
+							    <p align="left"><font size="-2">6)  Si vous n'avez pas internet haute vitesse ou que la connexion est trop  lente, il est possible que vous ne puissiez ajouter des images de 500kb  et +.</font></p>
+							    </td>
+							</tr>								
+						</table>
+					</form>
+					<!-- END FORM -->
+
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_LIST_ROW -->
+						<tr>
+							<td>{LABEL_FR}</td>
+						</tr>
+						<!-- END CATS_LIST_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					{FORM_BEGIN}
+					<table width="400" border="0" align="center" cellpadding="2" cellspacing="0">
+						<!-- BEGIN ITEMS_LIST_ROW --> 
+						<tr>
+							<td align="center">{ADMIN}</td><td align="center" bgcolor="#999999">{NAME}</td>
+							<td>{LABEL_FR}</td><td align="center">{TYPE}</td><td align="right"><strong>{SIZE}</strong></td>
+						</tr>
+						<!-- END ITEMS_LIST_ROW -->
+				  </table>
+			    <br />
+					{FORM_END}
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+						{FORM_BEGIN}
+						<!-- BEGIN ITEMS_ZOOM_ROW -->						
+						<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="center">{NAME}</td>						
+							</tr>
+							<tr>
+								<td align="center">{ID}</td>
+							</tr>	
+							<tr>
+								<td align="center">ajouté le : {CDATE}</td>
+							</tr>						
+							<tr>
+								<td align="center">{LABEL_FR}</td>						
+							</tr>	
+							<tr>
+								<td align="center">{TYPE}</td>						
+							</tr>							
+							<tr>
+								<td align="center"><strong>{SIZE}</strong></td>						
+							</tr>																																						
+						</table>
+						<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_FIRST}</font> &#8226;
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT}</font> &#8226; 
+								<font size="-2">{NAV_LAST}</font> 
+								<br />
+								<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+								<font size="-2">{NAV_POSITION}</font> 
+							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT}</font> 
+								<br />
+								<font size="-2">{NAV_RETURN}</font>
+							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	

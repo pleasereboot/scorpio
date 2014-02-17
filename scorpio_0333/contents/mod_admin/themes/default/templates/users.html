@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>{TITLE}</title>
+		<link href="/clients/scorpio3/themes/default/css/default.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		  	<tr>
+				<td>
+					<!-- BEGIN CATS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_LIST_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{CLASS}</td>
+							<td>{ORDER}</td><td>{ALLOWED}</td><td>{OWNER}</td><td>{STATUS}</td>
+						</tr>
+						<!-- END CATS_LIST_ROW -->
+					</table>
+					<br />
+					{FORM_END}
+					<br />
+					<!-- END CATS_LIST -->
+
+					<!-- BEGIN CATS_ZOOM -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<!-- BEGIN CATS_ZOOM_ROW -->
+						<tr>
+							<td>{ID}</td><td>{PID}</td><td>{NAME}</td><td>{LABEL_FR}</td><td>{TYPE}</td><td>{PAR}</td>
+						</tr>
+						<!-- END CATS_ZOOM_ROW -->
+					</table>
+					{FORM_END}
+					<!-- END CATS_ZOOM -->
+
+					<!-- BEGIN CATS_NAV -->
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>{CATS_NAV}</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END CATS_NAV -->
+
+					<!-- BEGIN ITEMS_LIST -->
+					{FORM_BEGIN}
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<th>admin</th>
+							<th>id</th>
+							<th>Courriel</th>
+							<th>Prenom</th>
+							<th>Nom</th>
+							<th>Permission</th>
+							<th>Status</th>
+							<th>Owner</th>
+															
+						</tr>
+						<tr>
+						  	<td height="10" colspan="7" valign="middle"><hr></td>
+						</tr>							
+						<!-- BEGIN ITEMS_LIST_ROW -->
+						<tr>
+							<td>{ADMIN}</td><td>{ID}</td><td>{EMAIL}</td><td>{FIRSTNAME}</td><td>{LASTNAME}</td><td>{ALLOWED}</td><td>{STATUS}</td><td>{OWNER}</td>
+						</tr>
+						<tr>
+						  	<td height="10" colspan="7" valign="middle"><hr></td>
+						</tr>												
+						<!-- END ITEMS_LIST_ROW -->
+				  </table>
+					<br />
+					{FORM_END}
+					<!-- END ITEMS_LIST -->
+					
+					<!-- BEGIN ITEMS_ZOOM -->
+					<br />
+						{FORM_BEGIN}
+						<!-- BEGIN ITEMS_ZOOM_ROW -->						
+						<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td bgcolor="#FFFFCC">{ID}</td>
+							</tr>
+							<tr>
+								<td>{EMAIL}</td>						
+							</tr>							
+							<tr>
+								<td>{FIRSTNAME}</td>						
+							</tr>							
+							<tr>
+								<td>{LASTNAME}</td>						
+							</tr>
+							<tr>
+								<td>{PASSWORD}</td>						
+							</tr>
+							<tr>
+								<td>{ALLOWED}</td>						
+							</tr>																												
+						</table>
+						<!-- END ITEMS_ZOOM_ROW -->
+						{FORM_END}
+					<!-- END ITEMS_ZOOM -->
+					
+					<!-- BEGIN ITEMS_LIST_NAV -->
+					<br />
+					<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="center"><br />
+								<font size="-2">{NAV_FIRST}</font> &#8226;
+								<font size="-2">{NAV_PREV}</font> &#8226;
+								<font size="-2">{NAV_NEXT}</font> &#8226; 
+								<font size="-2">{NAV_LAST}</font> 
+								<br />
+								<font size="-2">RETOUR <a href="{ITEMS_RETURN_URL}">{ITEMS_RETURN_LABEL}</a></font> &#8226;
+								<font size="-2">{NAV_POSITION}</font> 
+							</td>
+						</tr>
+					</table>
+					<br />
+					<!-- END ITEMS_LIST_NAV -->
+					
+					<!-- BEGIN ITEMS_ZOOM_NAV -->
+					<br />
+					<div class="ITEMS_NAV">
+						<font size="-2">{NAV_PREV}</font> &#8226; <font size="-2">{NAV_NEXT}</font> 
+						<br />
+						<font size="-2">{NAV_RETURN}</font>					</div>
+					<br />
+					<!-- END ITEMS_ZOOM_NAV -->
+				</td>
+		  	</tr>
+		</table>
+	</body>
+</html>	
+	
