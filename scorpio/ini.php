@@ -8,12 +8,12 @@
 /// SCORPIO INI
 	define('TIME'							, time());  //v3.25
 
-	define('SCORPIO_DB_VERSION'				, "0300");
-	define('SCORPIO_DB_NAME'					, "sites_" . SCORPIO_DB_VERSION);
-	define('SCORPIO_DB_USER'					, "sites");	
-	define('SCORPIO_DB_PASSWORD'				, "s1tes0300");
+	define('SCORPIO_DB_VERSION'				, "0400");
+	define('SCORPIO_DB_NAME'				, "sites_" . SCORPIO_DB_VERSION);
+	define('SCORPIO_DB_USER'				, "sites");	
+	define('SCORPIO_DB_PASSWORD'			, "s1tes0300");
 		
-	define('SCORPIO_VERSION'					, $scorpio_version);	
+	define('SCORPIO_VERSION'				, $scorpio_version);	
 	define('SCORPIO_EMAIL'					, "web@ledevin.com");
 	define('SCORPIO_PAGE_DEFAULT'			, "admin");
 	define('SCORPIO_THEME_DEFAULT'			, "default"); //devra etre setté  dans scorpio
@@ -21,18 +21,18 @@
 
 	define('SCORPIO_CONTENTS_PATH'			, SCORPIO_PATH 			. "contents/");
 	define('SCORPIO_CORE_PATH'				, SCORPIO_PATH 			. "core/");
-	define('SCORPIO_CLASSES_PATH'			, SCORPIO_CORE_PATH 		. "classes/");	
-	define('SCORPIO_FUNCTIONS_PATH'			, SCORPIO_CORE_PATH 		. "functions/");	
-	define('SCORPIO_JS_PATH'					, SCORPIO_CORE_PATH 		. "js/");
-	define('SCORPIO_TYPES_PATH'				, SCORPIO_CORE_PATH 		. "types/");
+	define('SCORPIO_CLASSES_PATH'			, SCORPIO_CORE_PATH 	. "classes/");	
+	define('SCORPIO_FUNCTIONS_PATH'			, SCORPIO_CORE_PATH 	. "functions/");	
+	define('SCORPIO_JS_PATH'				, SCORPIO_CORE_PATH 	. "js/");
+	define('SCORPIO_TYPES_PATH'				, SCORPIO_CORE_PATH 	. "types/");
 	
 	define('SCORPIO_INSTALL_PATH'			, SCORPIO_PATH			. "install/");	
 	define('SCORPIO_LANGUAGES_PATH'			, SCORPIO_PATH			. "languages/");
 	
-	define('SCORPIO_THEMES_PATH'				, SCORPIO_PATH			. "themes/");
+	define('SCORPIO_THEMES_PATH'			, SCORPIO_PATH			. "themes/");
 	define('SCORPIO_CSS_PATH'				, SCORPIO_THEMES_PATH . SCORPIO_THEME_DEFAULT . "/css/");
 	define('SCORPIO_FONTS_PATH'				, SCORPIO_THEMES_PATH . SCORPIO_THEME_DEFAULT . "/fonts/");
-	define('SCORPIO_IMAGES_PATH'				, SCORPIO_THEMES_PATH . SCORPIO_THEME_DEFAULT . "/images/");
+	define('SCORPIO_IMAGES_PATH'			, SCORPIO_THEMES_PATH . SCORPIO_THEME_DEFAULT . "/images/");
 	define('SCORPIO_SWF_PATH'				, SCORPIO_THEMES_PATH . SCORPIO_THEME_DEFAULT . "/swf/");		
 	define('SCORPIO_TEMPLATES_PATH'			, SCORPIO_THEMES_PATH . SCORPIO_THEME_DEFAULT . "/templates/");	
 
@@ -46,7 +46,7 @@
 	$CORE['SITE']			 				= "";
 	$CORE['SESSION'] 						= "";
 	$CORE['USER'] 							= "";
-	$CORE['GROUPS'] 							= "";
+	$CORE['GROUPS'] 						= "";
 	$CORE['MAIN'] 							= "";
 	$CORE['PAGE'] 							= "";
 	$CORE['POST'] 							= $_POST;
